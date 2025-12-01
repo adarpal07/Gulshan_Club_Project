@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.AccountantDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.AccountantDashboardController">
+   <children>
+      <VBox prefHeight="500.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Record Membership Fees" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Record Event Payments" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Generate Financial Report for Members or Events" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Manage Billing Information" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Pending Payments" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="View Payment Record of a member" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Generate Monthly Financial Report" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Order Approval" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="185.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Sign Out" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Text layoutX="409.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountant Dashboard">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="302.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press any button on the left to complete your task.!!" />
+      <Label layoutX="299.0" layoutY="116.0" prefHeight="41.0" prefWidth="399.0" text="Label" />
+   </children>
 </AnchorPane>
