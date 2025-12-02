@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="StaffDetailsAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="271.0" layoutY="3.0" text="Staff">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="CoordinatorsTableView" layoutX="2.0" layoutY="273.0" prefHeight="155.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="EventCoordinatorNameTableColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="EventCoordinatorContactTableColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="EventCoordinatorAddressColumn" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="EventCoordinatorSalaryTableColumn" prefWidth="75.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TableView fx:id="EventChefTableView" layoutX="1.0" layoutY="113.0" prefHeight="130.0" prefWidth="606.0">
+        <columns>
+          <TableColumn fx:id="EventChefNameTableColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="EventChefContactTableColumn" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="EventChefSAddressTableColumn" prefWidth="75.0" text="Address " />
+            <TableColumn fx:id="EventChefSalaryTableColumn" prefWidth="75.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Label layoutX="262.0" layoutY="91.0" text="Event Chefs" textFill="#0a4dc9" />
+      <Label layoutX="258.0" layoutY="255.0" text="Coordinators" textFill="#0651dc" />
+      <Button layoutX="488.0" layoutY="40.0" mnemonicParsing="false" onAction="#AddNewStaffButtonOnAction" text="Add New Staff" />
+   </children>
+</AnchorPane>
