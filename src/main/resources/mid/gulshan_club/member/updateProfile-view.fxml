@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.UpdateProfileController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.UpdateProfileController">
+   <children>
+      <Text layoutX="370.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Subscription Bill" />
+      <Text layoutX="107.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name" />
+      <TextField fx:id="nameTextfield" layoutX="206.0" layoutY="113.0" />
+      <Text layoutX="107.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your ID" />
+      <TextField fx:id="idTextfield" layoutX="206.0" layoutY="156.0" />
+      <Button layoutX="110.0" layoutY="341.0" mnemonicParsing="false" onAction="#saveInfoButton" text="Save Personal Information" />
+      <Button layoutX="678.0" layoutY="410.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+      <Text layoutX="107.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Address" />
+      <TextField fx:id="addressTextfield" layoutX="206.0" layoutY="197.0" />
+      <Text layoutX="107.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Email" />
+      <TextField fx:id="emailTextfield" layoutX="206.0" layoutY="240.0" />
+      <Text layoutX="425.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Age" />
+      <TextField fx:id="ageTextfield" layoutX="543.0" layoutY="113.0" />
+      <Text layoutX="425.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Date of Birth" />
+      <Text layoutX="425.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your NID Number" />
+      <TextField fx:id="nidNumTextfield" layoutX="543.0" layoutY="197.0" />
+      <Text layoutX="423.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Phone Number" />
+      <TextField fx:id="phoneNumTextfield" layoutX="541.0" layoutY="240.0" />
+      <DatePicker fx:id="dateOfBithDatePicker" layoutX="543.0" layoutY="156.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
 </AnchorPane>

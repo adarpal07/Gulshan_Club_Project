@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.RecordMembershipFeeController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.RecordMembershipFeeController">
+   <children>
+      <Text layoutX="343.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record Membership Fee" />
+      <Text layoutX="69.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Member" />
+      <TextField fx:id="nameTextfield" layoutX="172.0" layoutY="98.0" />
+      <Text layoutX="69.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member ID" />
+      <TextField fx:id="amountTextfield" layoutX="172.0" layoutY="200.0" />
+      <Text layoutX="69.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Amount" />
+      <TextField fx:id="idTextfield" layoutX="172.0" layoutY="147.0" />
+      <Text layoutX="416.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" />
+      <Text layoutX="416.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Record" />
+      <ComboBox fx:id="statusComboBox" layoutX="536.0" layoutY="98.0" prefWidth="150.0" />
+      <DatePicker fx:id="recordDatePicker" layoutX="536.0" layoutY="200.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="126.0" layoutY="329.0" mnemonicParsing="false" onAction="#recordPaymentButton" text="Record Payment" />
+      <Button layoutX="602.0" layoutY="416.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+      <Text layoutX="416.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" />
+      <ComboBox fx:id="monthComboBox" layoutX="536.0" layoutY="147.0" prefWidth="150.0" />
+   </children>
 </AnchorPane>
