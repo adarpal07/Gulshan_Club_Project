@@ -24,4 +24,8 @@ module mid.gulshan_club {
     opens mid.gulshan_club.ClubManager to javafx.fxml;
     exports mid.gulshan_club.ClubManager.Controller;
     opens mid.gulshan_club.ClubManager.Controller to javafx.fxml;
+    exports mid.gulshan_club.Club_Manager;
+    opens mid.gulshan_club.Club_Manager to javafx.fxml;
+    exports mid.gulshan_club.Club_Manager.Controller;
+    opens mid.gulshan_club.Club_Manager.Controller to javafx.fxml;
 }
