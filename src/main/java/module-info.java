@@ -11,4 +11,10 @@ module mid.gulshan_club {
     opens mid.gulshan_club.Member.Controller to javafx.fxml;
     exports mid.gulshan_club.Accountant.Controller;
     opens mid.gulshan_club.Accountant.Controller to javafx.fxml;
+    exports mid.gulshan_club.Supplier.Controller;
+    opens mid.gulshan_club.Supplier.Controller to javafx.fxml;
+    exports mid.gulshan_club.Guest_Member.Controller;
+    opens mid.gulshan_club.Guest_Member.Controller to javafx.fxml;
+    exports mid.gulshan_club.President.Controller;
+    opens mid.gulshan_club.President.Controller to javafx.fxml;
 }
