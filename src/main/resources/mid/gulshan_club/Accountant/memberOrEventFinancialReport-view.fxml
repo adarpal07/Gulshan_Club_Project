@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.MemberOrEventFinancialReportController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.MemberOrEventFinancialReportController">
    <children>
       <Text layoutX="250.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Financial Repoer for a Member or Event" />
       <Text layoutX="71.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the report type :" />

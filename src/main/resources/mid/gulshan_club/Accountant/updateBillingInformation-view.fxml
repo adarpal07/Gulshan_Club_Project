@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.UpdateBillingInformationController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.UpdateBillingInformationController">
    <children>
       <Text layoutX="339.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Billing Information" />
       <Text layoutX="150.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Member" />

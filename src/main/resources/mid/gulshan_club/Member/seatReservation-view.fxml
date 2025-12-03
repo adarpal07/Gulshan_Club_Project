@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.SeatReservationController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.SeatReservationController">
    <children>
       <Text layoutX="376.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat Reservation for Event" />
       <Text layoutX="175.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Event with Available Seats " />

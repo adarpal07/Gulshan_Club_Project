@@ -8,63 +8,27 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.MemberDashboardController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.MemberDashboardController">
    <children>
       <VBox prefHeight="500.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Pay Subscription Bill" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Payment History" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Reserve Event Seat" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="View Upcoming Events" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Update Profile" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Pay Event Bill" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Modify Event Reservations" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Book Facility" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
-            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" prefHeight="400.0" prefWidth="200.0" text="Sign Out" wrapText="true">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Button>
+            <Button mnemonicParsing="false" onAction="#payBillButton" prefHeight="400.0" prefWidth="200.0" text="Pay Subscription Bill" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#paymentHistoryButton" prefHeight="400.0" prefWidth="200.0" text="Payment History" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#seatReservationButton" prefHeight="400.0" prefWidth="200.0" text="Reseve Event Seat" />
+            <Button layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#upcomingEventButton" prefHeight="400.0" prefWidth="200.0" text="View Upcoming Events" />
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#updateProfileButton" prefHeight="400.0" prefWidth="200.0" text="Update Profile" />
+            <Button layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#payEventBillButton" prefHeight="400.0" prefWidth="200.0" text="Pay Event Bill" />
+            <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#modifyReservationButton" prefHeight="400.0" prefWidth="200.0" text="Modify Event Reservation" />
+            <Button layoutX="10.0" layoutY="135.0" mnemonicParsing="false" onAction="#bookFacilityButton" prefHeight="400.0" prefWidth="200.0" text="Book facility" />
+            <Button layoutX="10.0" layoutY="185.0" mnemonicParsing="false" onAction="#signOutButton" prefHeight="400.0" prefWidth="200.0" text="Sign Out" />
          </children>
       </VBox>
-      <Text layoutX="414.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Dashboard">
+      <Text layoutX="419.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Member Dashboard">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Text>
-      <Label layoutX="264.0" layoutY="127.0" prefHeight="37.0" prefWidth="383.0" text="Label" />
-      <Text layoutX="264.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press any button on the left to complete your task.!!" />
+      <Text layoutX="312.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press any button on the left to complete your task.!!" />
+      <Label fx:id="outputLabel" layoutX="312.0" layoutY="118.0" prefHeight="45.0" prefWidth="320.0" text="Label" />
    </children>
 </AnchorPane>
