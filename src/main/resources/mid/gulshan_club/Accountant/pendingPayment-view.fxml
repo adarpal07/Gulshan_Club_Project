@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.PendingPaymentController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.PendingPaymentController">
    <children>
       <Text layoutX="332.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Payments" />
       <TableView fx:id="pendingPaymentTableView" layoutX="72.0" layoutY="78.0" prefHeight="274.0" prefWidth="707.0">

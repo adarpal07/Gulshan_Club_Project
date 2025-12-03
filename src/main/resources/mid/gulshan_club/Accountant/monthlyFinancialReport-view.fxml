@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.MonthlyFinancialReportController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.MonthlyFinancialReportController">
    <children>
       <Text layoutX="81.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Month" />
       <ComboBox fx:id="monthComboBox" layoutX="241.0" layoutY="106.0" prefWidth="150.0" />

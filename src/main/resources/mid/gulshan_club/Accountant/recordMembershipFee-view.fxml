@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.RecordMembershipFeeController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.RecordMembershipFeeController">
    <children>
       <Text layoutX="343.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record Membership Fee" />
       <Text layoutX="69.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of Member" />

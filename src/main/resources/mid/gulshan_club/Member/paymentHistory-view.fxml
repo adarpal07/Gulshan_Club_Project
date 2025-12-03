@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.PaymentHistoryController">
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.PaymentHistoryController">
    <children>
       <Text layoutX="71.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Bill Type -" />
       <Text layoutX="353.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check All Payment History " />
