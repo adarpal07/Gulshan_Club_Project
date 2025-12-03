@@ -1,4 +1,4 @@
 package mid.gulshan_club.Member.Model;
 
-public class memberDashboard {
+public class MemberDashboard {
 }
