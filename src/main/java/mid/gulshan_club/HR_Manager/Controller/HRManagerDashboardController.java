@@ -1,4 +1,4 @@
-package mid.gulshan_club;
+package mid.gulshan_club.HR_Manager.Controller;
 
 public class HRManagerDashboardController
 {

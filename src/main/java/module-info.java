@@ -5,4 +5,6 @@ module mid.gulshan_club {
 
     opens mid.gulshan_club to javafx.fxml;
     exports mid.gulshan_club;
+    exports mid.gulshan_club.HR_Manager.Controller;
+    opens mid.gulshan_club.HR_Manager.Controller to javafx.fxml;
 }
