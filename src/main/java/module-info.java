@@ -1,6 +1,7 @@
 module mid.gulshan_club {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens mid.gulshan_club to javafx.fxml;
@@ -17,4 +18,10 @@ module mid.gulshan_club {
     opens mid.gulshan_club.Guest_Member.Controller to javafx.fxml;
     exports mid.gulshan_club.President.Controller;
     opens mid.gulshan_club.President.Controller to javafx.fxml;
+    exports mid.gulshan_club.ClubManager;
+    opens mid.gulshan_club.ClubManager to javafx.fxml;
+    exports mid.gulshan_club.ClubManager;
+    opens mid.gulshan_club.ClubManager to javafx.fxml;
+    exports mid.gulshan_club.ClubManager.Controller;
+    opens mid.gulshan_club.ClubManager.Controller to javafx.fxml;
 }
