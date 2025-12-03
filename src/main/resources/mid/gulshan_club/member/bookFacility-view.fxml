@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.BookFacilityController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.BookFacilityController">
+   <children>
+      <Text layoutX="360.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book your Club Facilities" />
+      <Text layoutX="159.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Facilities with Available Seats" />
+      <TableView fx:id="facilitiesDataTableView" layoutX="159.0" layoutY="108.0" prefHeight="200.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="189.0" text="Name of Facility" />
+          <TableColumn fx:id="timeColumn" prefWidth="183.0" text="Time Slot" />
+            <TableColumn fx:id="availabilityColumn" prefWidth="157.0" text="Availability" />
+            <TableColumn fx:id="seatColumn" prefWidth="130.0" text="Available Seat" />
+        </columns>
+      </TableView>
+      <Text layoutX="159.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facility Name" />
+      <TextField fx:id="nameTextfield" layoutX="254.0" layoutY="331.0" />
+      <Text layoutX="159.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Slot" />
+      <TextField fx:id="timeTextfield" layoutX="254.0" layoutY="367.0" />
+      <Text layoutX="518.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Seat Count" />
+      <TextField fx:id="seatTextfield" layoutX="613.0" layoutY="367.0" />
+      <Text layoutX="518.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Availability" />
+      <ComboBox fx:id="availabilityComboBox" layoutX="613.0" layoutY="331.0" prefWidth="150.0" />
+      <Button layoutX="20.0" layoutY="185.0" mnemonicParsing="false" onAction="#loadDataButton" prefHeight="59.0" prefWidth="123.0" text="Load Data to Check Available Facilities" wrapText="true" />
+      <Button layoutX="169.0" layoutY="417.0" mnemonicParsing="false" onAction="#bookButton" text="Book" />
+      <Button layoutX="662.0" layoutY="429.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+   </children>
 </AnchorPane>

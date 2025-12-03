@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <Label layoutX="272.0" layoutY="14.0" text="Feedback" />
+      <TableView fx:id="FilterTableView" layoutY="180.0" prefHeight="220.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="MemberIdTableColumn" prefWidth="123.20001220703125" text="Member Id" />
+          <TableColumn fx:id="EventNameTableColumn" prefWidth="184.0" text="Event Name" />
+            <TableColumn fx:id="FeddbackTableColumn" prefWidth="290.4000244140625" text="Fedback" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="111.0" text="Filter Feedbacks (Weekly/Mothly) :" />
+      <ComboBox layoutX="222.0" layoutY="107.0" onAction="#FeedbackFikterComboboxOnAction" prefWidth="150.0" />
+   </children>
+</AnchorPane>
