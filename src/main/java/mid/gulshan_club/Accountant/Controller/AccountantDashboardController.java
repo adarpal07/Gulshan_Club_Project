@@ -1,7 +1,14 @@
 package mid.gulshan_club.Accountant.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import mid.gulshan_club.HelloApplication;
+import java.io.IOException;
 
 public class AccountantDashboardController
 {
@@ -13,7 +20,13 @@ public class AccountantDashboardController
     }
 
     @javafx.fxml.FXML
-    public void orderApprovalButton(ActionEvent actionEvent) {
+    public void orderApprovalButton(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("approvalPurchaseOrder.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML
