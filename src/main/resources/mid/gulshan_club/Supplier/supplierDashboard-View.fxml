@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Supplier.Controller.SupplierDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Supplier.Controller.SupplierDashboardController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="154.0">
+         <children>
+            <Button layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#supplierProfileButton" prefHeight="58.0" prefWidth="200.0" text="Supplier profile" />
+            <Button layoutX="10.0" layoutY="68.0" mnemonicParsing="false" onAction="#manageProductsButton" prefHeight="58.0" prefWidth="200.0" text="Manage Products" />
+            <Button layoutX="10.0" layoutY="184.0" mnemonicParsing="false" onAction="#TrackDeliveriesButton" prefHeight="58.0" prefWidth="200.0" text="Track Deliveries" />
+            <Button layoutX="10.0" layoutY="242.0" mnemonicParsing="false" onAction="#scheduleDeliveryButton" prefHeight="58.0" prefWidth="200.0" text="Schedule Delivery" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#submitInvoiceButton" prefHeight="47.0" prefWidth="173.0" text="Submit Invoice" />
+            <Button layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#trainingSupplyButton" prefHeight="45.0" prefWidth="153.0" text="Training Supply" />
+            <Button mnemonicParsing="false" onAction="#viewPurchaseOrderButton" prefHeight="46.0" prefWidth="157.0" text="View Purchase Orders" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#orderRequestButton" prefHeight="58.0" prefWidth="200.0" text="Order Request" />
+            <Button layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#signOutButton" prefHeight="58.0" prefWidth="200.0" text="Sign Out" />
+         </children>
+      </VBox>
+      <Text layoutX="288.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Dashboard" />
+      <Text layoutX="263.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press any button on the left to complete your task.!!" />
+      <Label layoutX="263.0" layoutY="110.0" text="Label" />
+   </children>
 </AnchorPane>

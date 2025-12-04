@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Guest_Member.Controller.BookVisitorAccessController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Guest_Member.Controller.BookVisitorAccessController">
+   <children>
+      <Label layoutX="54.0" layoutY="97.0" text="Name" />
+      <Label layoutX="54.0" layoutY="134.0" text="Contact Number" />
+      <Label layoutX="270.0" layoutY="32.0" text="Book for Visitor Access" />
+      <Label layoutX="54.0" layoutY="175.0" text="Your NID Number" />
+      <Label layoutX="54.0" layoutY="214.0" text="Your Email" />
+      <Label layoutX="345.0" layoutY="97.0" text="Visit Date" />
+      <Label layoutX="345.0" layoutY="134.0" text="Purpose of visit" />
+      <TextField fx:id="nameTextfield" layoutX="160.0" layoutY="93.0"/>
+      <TextField fx:id="contactNumberTextfield" layoutX="160.0" layoutY="130.0" />
+      <TextField fx:id="nidNumberTextfield" layoutX="160.0" layoutY="171.0" />
+      <TextField fx:id="emailTextfield" layoutX="160.0" layoutY="210.0" />
+      <TextArea fx:id="purposeOfVisitTextArea" layoutX="345.0" layoutY="160.0" prefHeight="109.0" prefWidth="210.0" />
+      <DatePicker fx:id="visitDatePicker" layoutX="402.0" layoutY="93.0" prefHeight="25.0" prefWidth="161.0" />
+      <Button layoutX="433.0" layoutY="318.0" mnemonicParsing="false" onAction="#submitsaveButton" text="Submit" />
+   </children>
 </AnchorPane>
