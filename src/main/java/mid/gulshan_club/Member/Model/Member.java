@@ -1,0 +1,67 @@
+package mid.gulshan_club.Member.Model;
+
+import mid.gulshan_club.User;
+
+import java.time.LocalDate;
+
+public class Member extends User {
+    protected String address;
+    protected LocalDate dateOfBirth;
+    protected int age, nidNumber;
+
+    public Member(long userId, String userName, String email, String gender, int phoneNo, String address, LocalDate dateOfBirth, int age, int nidNumber) {
+        super(userId, userName, email, gender, phoneNo);
+        this.address = address;
+        this.dateOfBirth = dateOfBirth;
+        this.age = age;
+        this.nidNumber = nidNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getNidNumber() {
+        return nidNumber;
+    }
+
+    public void setNidNumber(int nidNumber) {
+        this.nidNumber = nidNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", age=" + age +
+                ", nidNumber=" + nidNumber +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", userId=" + userId +
+                ", phoneNo=" + phoneNo +
+                '}';
+    }
+
+}
