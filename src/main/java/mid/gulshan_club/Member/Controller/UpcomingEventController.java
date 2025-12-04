@@ -1,8 +1,15 @@
 package mid.gulshan_club.Member.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+import mid.gulshan_club.HelloApplication;
+
+import java.io.IOException;
 
 public class UpcomingEventController
 {
@@ -24,7 +31,13 @@ public class UpcomingEventController
     }
 
     @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
+    public void backButton(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Member/memberDashboard-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("Member Dashboard");
+        stage.setScene(scene);
+        stage.show();
     }
 
     @javafx.fxml.FXML
