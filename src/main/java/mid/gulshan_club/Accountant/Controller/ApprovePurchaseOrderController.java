@@ -1,7 +1,14 @@
 package mid.gulshan_club.Accountant.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+import mid.gulshan_club.HelloApplication;
+
+import java.io.IOException;
 
 public class ApprovePurchaseOrderController
 {
@@ -36,5 +43,15 @@ public class ApprovePurchaseOrderController
 
     @javafx.fxml.FXML
     public void saveButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Accountant/accountantDashboard-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setTitle("Accountant Dashboard");
+        stage.setScene(scene);
+        stage.show();
     }
 }

@@ -30,6 +30,6 @@
       <DatePicker fx:id="approvalDatePicker" layoutX="585.0" layoutY="298.0" prefHeight="25.0" prefWidth="150.0" />
       <Button layoutX="48.0" layoutY="403.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="58.0" prefWidth="211.0" text="Save" wrapText="true" />
       <Text layoutX="460.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Requested Orders from Supplier " />
-      <Button fx:id="backButton" layoutX="695.0" layoutY="449.0" mnemonicParsing="false" text="Back To Dashboard" />
+      <Button fx:id="backButton" layoutX="695.0" layoutY="449.0" mnemonicParsing="false" onAction="#backButton" text="Back To Dashboard" />
    </children>
 </AnchorPane>
