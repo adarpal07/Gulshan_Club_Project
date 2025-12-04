@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Guest_Member.Controller.BookVisitorAccessController"
+            fx:controller="mid.gulshan_club.Supplier.Controller.TrainingSuppliesViewController"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>
