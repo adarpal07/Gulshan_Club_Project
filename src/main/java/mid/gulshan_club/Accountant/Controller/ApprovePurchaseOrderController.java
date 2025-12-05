@@ -116,11 +116,6 @@ public class ApprovePurchaseOrderController
             oos.writeObject(apo);
             oos.close();
             informationAlert("Approval saved successfully!");
-            // clear inputs
-            reqNumTextfield.clear();
-            amountTextfield.clear();
-            statusCombobox.setValue(null);
-            approvalDatePicker.setValue(null);
         } catch (Exception e) {
             errorAlert("Error saving data to file!");
         }
