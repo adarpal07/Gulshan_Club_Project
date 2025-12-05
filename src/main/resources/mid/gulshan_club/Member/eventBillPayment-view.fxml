@@ -9,17 +9,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
+
 <AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.EventBillPaymentController">
    <children>
       <Text layoutX="366.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Event Bill" />
       <Text layoutX="165.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Event with Available Seats and Amount" />
       <TableView fx:id="eventDataTableView" layoutX="165.0" layoutY="106.0" prefHeight="200.0" prefWidth="660.0">
          <columns>
-            <TableColumn fx:id="nameColumn" prefWidth="153.0" text="Name of Event" />
-            <TableColumn fx:id="dateColumn" prefWidth="163.0" text="Date of Event" />
-            <TableColumn fx:id="amountColumn" prefWidth="128.0" text="Amount" />
-            <TableColumn fx:id="seatColumn" prefWidth="131.0" text="Available Seat" />
-            <TableColumn fx:id="venueColumn" prefWidth="84.0" text="Venue" />
+            <TableColumn fx:id="nameColumn" prefWidth="189.0" text="Name of Event" />
+            <TableColumn fx:id="dateColumn" prefWidth="183.0" text="Date of Event" />
+            <TableColumn fx:id="amountColumn" prefWidth="157.0" text="Amount" />
+            <TableColumn fx:id="seatColumn" prefWidth="130.0" text="Available Seat" />
          </columns>
       </TableView>
       <Text layoutX="165.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name" />

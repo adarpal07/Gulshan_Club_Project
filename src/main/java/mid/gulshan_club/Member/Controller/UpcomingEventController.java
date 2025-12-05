@@ -4,40 +4,30 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
-import mid.gulshan_club.ClubManager.Model.CreateEvent;
 import mid.gulshan_club.HelloApplication;
 
-import java.io.*;
-import java.time.LocalDate;
-import java.util.ArrayList;
+import java.io.IOException;
 
 public class UpcomingEventController
 {
     @javafx.fxml.FXML
-    private TableView<CreateEvent> eventDataTableView;
+    private TableView eventDataTableView;
     @javafx.fxml.FXML
-    private TableColumn<CreateEvent, String> nameColumn;
+    private TableColumn nameColumn;
     @javafx.fxml.FXML
-    private TableColumn<CreateEvent, Integer> amountColumn;
+    private TableColumn amountColumn;
     @javafx.fxml.FXML
-    private TableColumn<CreateEvent, LocalDate> dateColumn;
+    private TableColumn dateColumn;
     @javafx.fxml.FXML
-    private TableColumn<CreateEvent, String> venueColumn;
+    private TableColumn venueColumn;
     @javafx.fxml.FXML
-    private TableColumn<CreateEvent, Integer> seatColumn;
+    private TableColumn seatColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
-        nameColumn.setCellValueFactory(new PropertyValueFactory<>("eventName"));
-        venueColumn.setCellValueFactory(new PropertyValueFactory<>("venue"));
-        seatColumn.setCellValueFactory(new PropertyValueFactory<>("seat"));
-        amountColumn.setCellValueFactory(new PropertyValueFactory<>("amount"));
-        dateColumn.setCellValueFactory(new PropertyValueFactory<>("eventDate"));
     }
 
     @javafx.fxml.FXML
@@ -51,42 +41,6 @@ public class UpcomingEventController
     }
 
     @javafx.fxml.FXML
-    public void loadEventButton(ActionEvent actionEvent) throws IOException {
-        File file = new File("CreateEvent.bin");
-
-        if (!file.exists()) {
-            System.out.println("Bin file dose not exist");
-            return;
-        }
-
-        FileInputStream fis = new FileInputStream(file);
-        ObjectInputStream ois = new ObjectInputStream(fis);
-
-        ArrayList<CreateEvent> records = new ArrayList<>();
-
-        try {
-            while (true) {
-                CreateEvent r = (CreateEvent) ois.readObject();
-                records.add(r);
-            }
-        } catch (EOFException eof) {
-            errorAlert("End of file reached");
-        } catch (ClassNotFoundException | IOException cnf) {
-            errorAlert("Class not found!");
-        }
-
-        eventDataTableView.getItems().clear();
-        eventDataTableView.getItems().addAll(records);
-
-    }
-    public void errorAlert(String s){
-        Alert a = new Alert(Alert.AlertType.ERROR);
-        a.setContentText(s);
-        a.showAndWait();
-    }
-    public void informationAlert(String s){
-        Alert a = new Alert(Alert.AlertType.INFORMATION);
-        a.setContentText(s);
-        a.showAndWait();
+    public void loadEventButton(ActionEvent actionEvent) {
     }
 }

@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Supplier.Controller.DeliveryLogisticsController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Supplier.Controller.DeliveryLogisticsController">
+   <children>
+      <Label layoutX="220.0" layoutY="51.0" text="Delivery Logistics" />
+      <Label layoutX="41.0" layoutY="99.0" text="Delivery Details" />
+      <Label layoutX="41.0" layoutY="146.0" text="ETA" />
+      <Label layoutX="41.0" layoutY="192.0" text="Tracking Number" />
+      <Label layoutX="41.0" layoutY="242.0" text="Courrier Options" />
+      <Label layoutX="41.0" layoutY="294.0" text="Driver name" />
+      <TextField fx:id="driverContactTextfield" layoutX="144.0" layoutY="333.0" />
+      <TextField fx:id="tracNumTextfield" layoutX="144.0" layoutY="188.0" />
+      <TextField fx:id="driverNameTextfield" layoutX="144.0" layoutY="290.0" />
+      <Label layoutX="41.0" layoutY="337.0" text="Driver contact" />
+      <DatePicker fx:id="etaDatepicker" layoutX="141.0" layoutY="142.0" />
+      <Button fx:id="saveButton" layoutX="89.0" layoutY="405.0" mnemonicParsing="false" onAction="#saveButton" text="save" />
+      <Button fx:id="backButton" layoutX="341.0" layoutY="441.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dash Board" />
+      <ComboBox fx:id="courrierOptionComboBox" layoutX="150.0" layoutY="238.0" prefWidth="150.0" />
+   </children>
 </AnchorPane>

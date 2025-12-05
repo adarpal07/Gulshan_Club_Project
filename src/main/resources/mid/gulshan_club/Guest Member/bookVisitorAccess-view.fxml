@@ -38,7 +38,7 @@
          <font>
             <Font size="15.0" />
          </font></Label>
-      <TextField fx:id="memberIdText field" layoutX="206.0" layoutY="215.0" />
+      <TextField fx:id="memberIdTextfield" layoutX="206.0" layoutY="215.0" />
       <TextField fx:id="contactNumberTextfield" layoutX="206.0" layoutY="176.0" />
       <TextField fx:id="nidNumberTextfield" layoutX="551.0" layoutY="131.0" />
       <TextField fx:id="emailTextfield" layoutX="206.0" layoutY="248.0" />
@@ -53,7 +53,7 @@
             <Font size="15.0" />
          </font>
       </Button>
-      <TextField fx:id="nameTextfield1" layoutX="206.0" layoutY="132.0" />
+      <TextField fx:id="nameTextfield" layoutX="206.0" layoutY="132.0" />
       <Label layoutX="54.0" layoutY="218.0" text="Member ID">
          <font>
             <Font size="15.0" />

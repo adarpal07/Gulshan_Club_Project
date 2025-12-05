@@ -1,14 +1,14 @@
 package mid.gulshan_club.Member.Model;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class EventBillPayment implements Serializable {
+public class EventBillPayment extends Member{
     protected String eventName, paymentMethod;
     protected int seatCount, amount ;
     protected LocalDate eventDate;
 
-    public EventBillPayment(String eventName, String paymentMethod, int seatCount, int amount, LocalDate eventDate) {
+    public EventBillPayment(long userId, String userName, String email, String gender, int phoneNo, String address, LocalDate dateOfBirth, int age, int nidNumber, String eventName, String paymentMethod, int seatCount, int amount, LocalDate eventDate) {
+        super(userId, userName, email, gender, phoneNo, address, dateOfBirth, age, nidNumber);
         this.eventName = eventName;
         this.paymentMethod = paymentMethod;
         this.seatCount = seatCount;
@@ -64,6 +64,15 @@ public class EventBillPayment implements Serializable {
                 ", seatCount=" + seatCount +
                 ", amount=" + amount +
                 ", eventDate=" + eventDate +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", age=" + age +
+                ", nidNumber=" + nidNumber +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", userId=" + userId +
+                ", phoneNo=" + phoneNo +
                 '}';
     }
 }

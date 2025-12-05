@@ -1,28 +1,18 @@
 package mid.gulshan_club.Member.Model;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class SubscriptionBillPayment implements Serializable {
-    protected String memberName, paymentMethod, paymentMonth;
-    protected int memberId, amount;
+public class SubscriptionBillPayment extends Member {
+    protected String paymentMethod, paymentMonth;
+    protected int amount;
     protected LocalDate paymentDate;
 
-    public SubscriptionBillPayment(String memberName, String paymentMethod, String paymentMonth, int memberId, int amount, LocalDate paymentDate) {
-        this.memberName = memberName;
+    public SubscriptionBillPayment(long userId, String userName, String email, String gender, int phoneNo, String address, LocalDate dateOfBirth, int age, int nidNumber, String paymentMethod, String paymentMonth, int amount, LocalDate paymentDate) {
+        super(userId, userName, email, gender, phoneNo, address, dateOfBirth, age, nidNumber);
         this.paymentMethod = paymentMethod;
         this.paymentMonth = paymentMonth;
-        this.memberId = memberId;
         this.amount = amount;
         this.paymentDate = paymentDate;
-    }
-
-    public String getMemberName() {
-        return memberName;
-    }
-
-    public void setMemberName(String memberName) {
-        this.memberName = memberName;
     }
 
     public String getPaymentMethod() {
@@ -39,14 +29,6 @@ public class SubscriptionBillPayment implements Serializable {
 
     public void setPaymentMonth(String paymentMonth) {
         this.paymentMonth = paymentMonth;
-    }
-
-    public int getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(int memberId) {
-        this.memberId = memberId;
     }
 
     public int getAmount() {
@@ -68,12 +50,19 @@ public class SubscriptionBillPayment implements Serializable {
     @Override
     public String toString() {
         return "SubscriptionBillPayment{" +
-                "memberName='" + memberName + '\'' +
-                ", paymentMethod='" + paymentMethod + '\'' +
+                "paymentMethod='" + paymentMethod + '\'' +
                 ", paymentMonth='" + paymentMonth + '\'' +
-                ", memberId=" + memberId +
                 ", amount=" + amount +
                 ", paymentDate=" + paymentDate +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", age=" + age +
+                ", nidNumber=" + nidNumber +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", userId=" + userId +
+                ", phoneNo=" + phoneNo +
                 '}';
     }
 }

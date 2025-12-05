@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Guest_Member.Controller.ParkingRegistrationController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Guest_Member.Controller.ParkingRegistrationController">
+   <children>
+      <Label layoutX="228.0" layoutY="44.0" text="Booking for Guest Parking" />
+      <Label layoutX="86.0" layoutY="102.0" text="Name" />
+      <Label layoutX="89.0" layoutY="148.0" text="Member Id" />
+      <Label layoutX="88.0" layoutY="196.0" text="License Plate Number" />
+      <Label layoutX="86.0" layoutY="242.0" text="Brand" />
+      <Label layoutX="85.0" layoutY="291.0" text="Model" />
+      <Label layoutX="85.0" layoutY="328.0" text="Parking Duration" />
+      <TextField fx:id="nameTextfield" layoutX="228.0" layoutY="98.0" />
+      <TextField fx:id="memberIdTextfield" layoutX="228.0" layoutY="144.0" />
+      <TextField fx:id="licensePlateNumberTextfield" layoutX="228.0" layoutY="192.0" />
+      <TextField fx:id="brandTextfield" layoutX="228.0" layoutY="238.0" />
+      <TextField fx:id="modelTextfield" layoutX="228.0" layoutY="287.0" />
+      <ComboBox fx:id="parkingDurationComboBox" layoutX="234.0" layoutY="324.0" prefWidth="150.0" />
+      <Button layoutX="208.0" layoutY="397.0" mnemonicParsing="false" onAction="#registarButton" text="Registar" />
+      <Button fx:id="backButton" layoutX="359.0" layoutY="443.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+   </children>
 </AnchorPane>
