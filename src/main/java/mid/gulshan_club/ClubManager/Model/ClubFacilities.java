@@ -1,16 +1,16 @@
-package mid.gulshan_club.Member.Model;
+package mid.gulshan_club.ClubManager.Model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class BookFacility implements Serializable {
+public class ClubFacilities implements Serializable {
     protected String facilityName, availability;
-    protected int timeSlot, seatCount;
+    protected int availableSeat, seatCount;
 
-    public BookFacility(String facilityName, String availability, int timeSlot, int seatCount) {
+    public ClubFacilities(String facilityName, String availability, int availableSeat, int seatCount) {
         this.facilityName = facilityName;
         this.availability = availability;
-        this.timeSlot = timeSlot;
+        this.availableSeat = availableSeat;
         this.seatCount = seatCount;
     }
 
@@ -30,12 +30,12 @@ public class BookFacility implements Serializable {
         this.availability = availability;
     }
 
-    public int getTimeSlot() {
-        return timeSlot;
+    public int getAvailableSeat() {
+        return availableSeat;
     }
 
-    public void setTimeSlot(int timeSlot) {
-        this.timeSlot = timeSlot;
+    public void setAvailableSeat(int availableSeat) {
+        this.availableSeat = availableSeat;
     }
 
     public int getSeatCount() {
@@ -48,10 +48,10 @@ public class BookFacility implements Serializable {
 
     @Override
     public String toString() {
-        return "BookFacility{" +
+        return "ClubFacilities{" +
                 "facilityName='" + facilityName + '\'' +
                 ", availability='" + availability + '\'' +
-                ", timeSlot=" + timeSlot +
+                ", availableSeat=" + availableSeat +
                 ", seatCount=" + seatCount +
                 '}';
     }

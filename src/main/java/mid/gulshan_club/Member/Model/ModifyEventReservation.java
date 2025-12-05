@@ -1,14 +1,14 @@
 package mid.gulshan_club.Member.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class ModifyEventReservation extends Member{
+public class ModifyEventReservation implements Serializable {
     protected String eventName, venue;
     protected LocalDate eventDate;
     protected int seatBooked;
 
-    public ModifyEventReservation(long userId, String userName, String email, String gender, int phoneNo, String address, LocalDate dateOfBirth, int age, int nidNumber, String eventName, String venue, LocalDate eventDate, int seatBooked) {
-        super(userId, userName, email, gender, phoneNo, address, dateOfBirth, age, nidNumber);
+    public ModifyEventReservation(String eventName, String venue, LocalDate eventDate, int seatBooked) {
         this.eventName = eventName;
         this.venue = venue;
         this.eventDate = eventDate;
@@ -54,15 +54,6 @@ public class ModifyEventReservation extends Member{
                 ", venue='" + venue + '\'' +
                 ", eventDate=" + eventDate +
                 ", seatBooked=" + seatBooked +
-                ", address='" + address + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", age=" + age +
-                ", nidNumber=" + nidNumber +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
-                ", gender='" + gender + '\'' +
                 '}';
     }
 }

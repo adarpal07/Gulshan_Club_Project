@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Member.Controller.ModifyEventReservationController">
    <children>
       <Text layoutX="366.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Seat Reservation" />
@@ -23,11 +22,11 @@
       </TableView>
       <Text layoutX="165.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Name" />
       <TextField fx:id="nameTextfield" layoutX="286.0" layoutY="330.0" />
-      <Text layoutX="160.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Seat You Booked" />
+      <Text layoutX="160.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modified Seat Count" />
       <TextField fx:id="seatTextfield" layoutX="286.0" layoutY="368.0" />
       <Text layoutX="524.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venue" />
       <Button layoutX="26.0" layoutY="184.0" mnemonicParsing="false" onAction="#loadEventButton" prefHeight="59.0" prefWidth="123.0" text="Load Data to Check All Reserved Events" wrapText="true" />
-      <Button layoutX="165.0" layoutY="416.0" mnemonicParsing="false" onAction="#reservationCancelButton" text="Cancel Reservation" />
+      <Button layoutX="165.0" layoutY="416.0" mnemonicParsing="false" onAction="#reservationModifyButton" text="Modify Reservation" />
       <Button layoutX="662.0" layoutY="441.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
       <TextField fx:id="venueTextfield" layoutX="619.0" layoutY="330.0" />
       <Text layoutX="524.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Date" />
