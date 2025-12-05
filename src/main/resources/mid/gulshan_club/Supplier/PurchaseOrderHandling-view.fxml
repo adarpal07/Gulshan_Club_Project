@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Supplier.Controller.PurchaseOrderHandlingViewController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Supplier.Controller.PurchaseOrderHandlingViewController">
+   <children>
+      <Label layoutX="210.0" layoutY="29.0" text="Confirm Order Request">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="60.0" text="Order Request" />
+      <TableView layoutX="148.0" layoutY="100.0" prefHeight="200.0" prefWidth="301.0">
+        <columns>
+          <TableColumn fx:id="itemsLabel" prefWidth="75.0" text="Item" />
+          <TableColumn fx:id="quantityLabel" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="unitPriceLabel" prefWidth="75.0" text="Unit Price" />
+            <TableColumn fx:id="totalLabel" prefWidth="75.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="confirmButton" layoutX="123.0" layoutY="334.0" mnemonicParsing="false" onAction="#confirmButton" text="Confirm" />
+      <Button fx:id="rejectButton" layoutX="330.0" layoutY="334.0" mnemonicParsing="false" onAction="#rejectButton" text="Reject" />
+      <Button fx:id="backButton" layoutX="424.0" layoutY="347.0" mnemonicParsing="false" onAction="#backButton" text="Back to DashBoard" />
+   </children>
 </AnchorPane>
