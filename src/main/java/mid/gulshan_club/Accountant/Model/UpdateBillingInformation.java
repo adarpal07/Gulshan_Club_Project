@@ -9,8 +9,8 @@ public class UpdateBillingInformation extends Employee {
     protected int amount;
     protected LocalDate updatedDate;
 
-    public UpdateBillingInformation(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String status, String billMonth, int amount, LocalDate updatedDate) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public UpdateBillingInformation(long userId, String status, String billMonth, int amount, LocalDate updatedDate) {
+        super(userId);
         this.status = status;
         this.billMonth = billMonth;
         this.amount = amount;

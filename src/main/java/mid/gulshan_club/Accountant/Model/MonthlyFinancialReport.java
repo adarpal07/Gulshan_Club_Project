@@ -7,8 +7,8 @@ import java.time.LocalDate;
 public class MonthlyFinancialReport extends Employee {
     protected String month;
 
-    public MonthlyFinancialReport(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String month) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public MonthlyFinancialReport(long userId, String month) {
+        super(userId);
         this.month = month;
     }
 

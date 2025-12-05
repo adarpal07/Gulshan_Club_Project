@@ -5,9 +5,8 @@ import mid.gulshan_club.Employee;
 import java.time.LocalDate;
 
 public class PendingPayments extends Employee {
-
-    public PendingPayments(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public PendingPayments(long userId) {
+        super(userId);
     }
 
     @Override

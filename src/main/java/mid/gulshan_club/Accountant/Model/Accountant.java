@@ -9,8 +9,8 @@ public class Accountant extends Employee {
     protected LocalDate dateOfBirth;
     protected int age, nidNumber;
 
-    public Accountant(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String address, LocalDate dateOfBirth, int age, int nidNumber) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public Accountant(long userId, String address, LocalDate dateOfBirth, int age, int nidNumber) {
+        super(userId);
         this.address = address;
         this.dateOfBirth = dateOfBirth;
         this.age = age;
