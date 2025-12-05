@@ -54,4 +54,14 @@ public class ApprovePurchaseOrderController
         stage.setScene(scene);
         stage.show();
     }
+    public void errorAlert(String s){
+        Alert a = new Alert(Alert.AlertType.ERROR);
+        a.setContentText(s);
+        a.showAndWait();
+    }
+    public void informationAlert(String s){
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText(s);
+        a.showAndWait();
+    }
 }

@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import mid.gulshan_club.HelloApplication;
 
@@ -48,5 +45,15 @@ public class MemberOrEventFinancialReportController
 
     @javafx.fxml.FXML
     public void generateReportButton(ActionEvent actionEvent) {
+    }
+    public void errorAlert(String s){
+        Alert a = new Alert(Alert.AlertType.ERROR);
+        a.setContentText(s);
+        a.showAndWait();
+    }
+    public void informationAlert(String s){
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setContentText(s);
+        a.showAndWait();
     }
 }

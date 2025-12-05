@@ -4,13 +4,12 @@ import mid.gulshan_club.Employee;
 
 import java.time.LocalDate;
 
-public class RecordEventPayment extends Employee {
+public class RecordEventPayment  {
     protected String eventName, venueName, month;
     protected int amount, eventTime;
     protected LocalDate eventDate, recordDate;
 
-    public RecordEventPayment(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String eventName, String venueName, String month, int amount, int eventTime, LocalDate eventDate, LocalDate recordDate) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public RecordEventPayment(String eventName, String venueName, String month, int amount, int eventTime, LocalDate eventDate, LocalDate recordDate) {
         this.eventName = eventName;
         this.venueName = venueName;
         this.month = month;
@@ -86,15 +85,6 @@ public class RecordEventPayment extends Employee {
                 ", eventTime=" + eventTime +
                 ", eventDate=" + eventDate +
                 ", recordDate=" + recordDate +
-                ", joiningDate=" + joiningDate +
-                ", salary=" + salary +
-                ", duration=" + duration +
-                ", department='" + department + '\'' +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
                 '}';
     }
 }
