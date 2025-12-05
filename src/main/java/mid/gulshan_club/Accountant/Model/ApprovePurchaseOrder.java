@@ -9,8 +9,8 @@ public class ApprovePurchaseOrder extends Employee {
     protected String status;
     protected LocalDate approvalDate;
 
-    public ApprovePurchaseOrder(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, int reqNum, int amount, String status, LocalDate approvalDate) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public ApprovePurchaseOrder(long userId, int reqNum, int amount, String status, LocalDate approvalDate) {
+        super(userId);
         this.reqNum = reqNum;
         this.amount = amount;
         this.status = status;

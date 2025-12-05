@@ -4,7 +4,8 @@ module mid.gulshan_club {
     requires java.desktop;
     //requires mid.gulshan_club;
     requires javafx.graphics;
-    requires mid.gulshan_club;
+
+    requires javafx.base;
     //requires mid.gulshan_club;
 
 

@@ -9,8 +9,8 @@ public class RecordMembershipFee extends Employee {
     protected int amount;
     protected LocalDate recordDate;
 
-    public RecordMembershipFee(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String status, String month, int amount, LocalDate recordDate) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public RecordMembershipFee(long userId, String status, String month, int amount, LocalDate recordDate) {
+        super(userId);
         this.status = status;
         this.month = month;
         this.amount = amount;

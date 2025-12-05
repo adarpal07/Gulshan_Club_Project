@@ -9,8 +9,8 @@ public class RecordEventPayment extends Employee {
     protected int amount, eventTime;
     protected LocalDate eventDate, recordDate;
 
-    public RecordEventPayment(long userId, String userName, String email, String gender, int phoneNo, LocalDate joiningDate, double salary, double duration, String department, String eventName, String venueName, String month, int amount, int eventTime, LocalDate eventDate, LocalDate recordDate) {
-        super(userId, userName, email, gender, phoneNo, joiningDate, salary, duration, department);
+    public RecordEventPayment(long userId, String eventName, String venueName, String month, int amount, int eventTime, LocalDate eventDate, LocalDate recordDate) {
+        super(userId);
         this.eventName = eventName;
         this.venueName = venueName;
         this.month = month;
