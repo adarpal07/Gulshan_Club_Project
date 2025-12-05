@@ -12,7 +12,7 @@ public class ParkingRegistrationController
     @javafx.fxml.FXML
     private TextField memberIdTextfield;
     @javafx.fxml.FXML
-    private ComboBox parkingDurationComboBox;
+    private ComboBox<String> parkingDurationComboBox;
     @javafx.fxml.FXML
     private Button backButton;
     @javafx.fxml.FXML
