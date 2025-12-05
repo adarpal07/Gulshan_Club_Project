@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Guest_Member.Controller.FacilityBookingController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Guest_Member.Controller.FacilityBookingController">
+   <children>
+      <Button layoutX="713.0" layoutY="42.0" mnemonicParsing="false" onAction="#refreshButton" text="Refresh" />
+      <Button layoutX="79.0" layoutY="448.0" mnemonicParsing="false" onAction="#bookButton" prefHeight="25.0" prefWidth="161.0" text="Book" />
+      <Button fx:id="backButton" layoutX="613.0" layoutY="435.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="161.0" text="Back to Dashboard" />
+      <TextField fx:id="facilityNameTextField" layoutX="174.0" layoutY="120.0" />
+      <TextField fx:id="timeSlotTextField" layoutX="174.0" layoutY="158.0" />
+      <ComboBox fx:id="avalibilityComboBox" layoutX="558.0" layoutY="120.0" prefWidth="150.0" />
+      <TextField fx:id="seatCountTextField" layoutX="552.0" layoutY="158.0" />
+      <Label layoutX="79.0" layoutY="124.0" text="Facility Name" />
+      <Label layoutX="79.0" layoutY="162.0" text="Time Slot" />
+      <Label layoutX="469.0" layoutY="124.0" text="Avalibility" />
+      <Label layoutX="469.0" layoutY="162.0" text="Seat Count" />
+      <TableView fx:id="clFacilityBookingTableView" layoutX="149.0" layoutY="221.0" prefHeight="200.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="facilityNameColumn" prefWidth="119.0" text="Facility Name" />
+          <TableColumn fx:id="timeslotColumn" prefWidth="123.0" text="Time Slot" />
+            <TableColumn fx:id="avalibilityColumn" minWidth="0.0" prefWidth="163.0" text="Avalibility" />
+            <TableColumn fx:id="availableSeatColumn" minWidth="0.0" prefWidth="131.0" text="Available Seat" />
+        </columns>
+      </TableView>
+      <Label layoutX="349.0" layoutY="46.0" prefHeight="54.0" prefWidth="171.0" text="Club Facility Booking">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

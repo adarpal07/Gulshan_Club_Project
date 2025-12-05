@@ -17,9 +17,21 @@ public class BookVisitorAccessController {
     @javafx.fxml.FXML
     private DatePicker visitDatePicker;
     @javafx.fxml.FXML
-    private TextField nameTextfield;
+    private TextField nameTextfield1;
+    @javafx.fxml.FXML
+    private TextField memberIdTextfield;
+    @javafx.fxml.FXML
+    private Button backButton;
+
+    @Deprecated
+    public void submitSaveButton(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
-    public void submitSaveButton(ActionEvent actionEvent) {
+    public void submitsaveButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void backButton(ActionEvent actionEvent) {
     }
 }
