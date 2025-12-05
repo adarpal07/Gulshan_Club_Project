@@ -1,17 +1,16 @@
-package mid.gulshan_club.Member.Model;
+package mid.gulshan_club.ClubManager.Model;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 
-public class EventBillPayment implements Serializable {
-    protected String eventName, paymentMethod;
-    protected int seatCount, amount ;
+public class CreateEvent {
+    protected String eventName, venue;
+    protected int seat, amount;
     protected LocalDate eventDate;
 
-    public EventBillPayment(String eventName, String paymentMethod, int seatCount, int amount, LocalDate eventDate) {
+    public CreateEvent(String eventName, String venue, int seat, int amount, LocalDate eventDate) {
         this.eventName = eventName;
-        this.paymentMethod = paymentMethod;
-        this.seatCount = seatCount;
+        this.venue = venue;
+        this.seat = seat;
         this.amount = amount;
         this.eventDate = eventDate;
     }
@@ -24,20 +23,20 @@ public class EventBillPayment implements Serializable {
         this.eventName = eventName;
     }
 
-    public String getPaymentMethod() {
-        return paymentMethod;
+    public String getVenue() {
+        return venue;
     }
 
-    public void setPaymentMethod(String paymentMethod) {
-        this.paymentMethod = paymentMethod;
+    public void setVenue(String venue) {
+        this.venue = venue;
     }
 
-    public int getSeatCount() {
-        return seatCount;
+    public int getSeat() {
+        return seat;
     }
 
-    public void setSeatCount(int seatCount) {
-        this.seatCount = seatCount;
+    public void setSeat(int seat) {
+        this.seat = seat;
     }
 
     public int getAmount() {
@@ -58,10 +57,10 @@ public class EventBillPayment implements Serializable {
 
     @Override
     public String toString() {
-        return "EventBillPayment{" +
+        return "CreateEvent{" +
                 "eventName='" + eventName + '\'' +
-                ", paymentMethod='" + paymentMethod + '\'' +
-                ", seatCount=" + seatCount +
+                ", venue='" + venue + '\'' +
+                ", seat=" + seat +
                 ", amount=" + amount +
                 ", eventDate=" + eventDate +
                 '}';
