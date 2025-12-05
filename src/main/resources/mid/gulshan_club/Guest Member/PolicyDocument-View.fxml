@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Guest_Member.Controller.PolicyDocumentViewController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Guest_Member.Controller.PolicyDocumentViewController">
+   <children>
+      <Label layoutX="225.0" layoutY="36.0" text="View Club Policy Document" />
+      <Label layoutX="91.0" layoutY="92.0" text="Dress Code" />
+      <Label layoutX="91.0" layoutY="147.0" text="Description" />
+      <Label layoutX="38.0" layoutY="203.0" text="Booking and cancellation list" />
+      <Button fx:id="acknowledgeButton" layoutX="54.0" layoutY="286.0" mnemonicParsing="false" onAction="#acknowledgeButton" text="Acknowledge" />
+      <Button fx:id="backButton" layoutX="427.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+      <ComboBox fx:id="dressCodeCombobox" layoutX="185.0" layoutY="88.0" prefWidth="150.0" />
+      <ComboBox fx:id="descriptionCombobox" layoutX="185.0" layoutY="143.0" prefWidth="150.0" />
+      <ComboBox layoutX="207.0" layoutY="199.0" prefWidth="150.0" />
+      <Label fx:id="outputLabel" layoutX="413.0" layoutY="82.0" prefHeight="173.0" prefWidth="150.0" text="Label" />
+   </children>
 </AnchorPane>
