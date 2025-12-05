@@ -81,7 +81,7 @@ public class AccountantDashboardController
 
     @javafx.fxml.FXML
     public void memberOrEventFinancialReportButton(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Accountant/memberOrEventFinancialReport-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Accountant/viewEventFinancialReport-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setTitle("Financial Report of Member or Event");

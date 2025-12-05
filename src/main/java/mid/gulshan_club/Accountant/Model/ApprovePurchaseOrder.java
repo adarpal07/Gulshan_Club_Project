@@ -2,15 +2,15 @@ package mid.gulshan_club.Accountant.Model;
 
 import mid.gulshan_club.Employee;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class ApprovePurchaseOrder extends Employee {
+public class ApprovePurchaseOrder implements Serializable {
     protected int reqNum, amount;
     protected String status;
     protected LocalDate approvalDate;
 
-    public ApprovePurchaseOrder(long userId, int reqNum, int amount, String status, LocalDate approvalDate) {
-        super(userId);
+    public ApprovePurchaseOrder(int reqNum, int amount, String status, LocalDate approvalDate) {
         this.reqNum = reqNum;
         this.amount = amount;
         this.status = status;
@@ -56,15 +56,6 @@ public class ApprovePurchaseOrder extends Employee {
                 ", amount=" + amount +
                 ", status='" + status + '\'' +
                 ", approvalDate=" + approvalDate +
-                ", joiningDate=" + joiningDate +
-                ", salary=" + salary +
-                ", duration=" + duration +
-                ", department='" + department + '\'' +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
                 '}';
     }
 }
