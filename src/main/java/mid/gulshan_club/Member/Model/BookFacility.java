@@ -1,13 +1,13 @@
 package mid.gulshan_club.Member.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class BookFacility extends Member {
+public class BookFacility implements Serializable {
     protected String facilityName, availability;
     protected int timeSlot, seatCount;
 
-    public BookFacility(long userId, String userName, String email, String gender, int phoneNo, String address, LocalDate dateOfBirth, int age, int nidNumber, String facilityName, String availability, int timeSlot, int seatCount) {
-        super(userId, userName, email, gender, phoneNo, address, dateOfBirth, age, nidNumber);
+    public BookFacility(String facilityName, String availability, int timeSlot, int seatCount) {
         this.facilityName = facilityName;
         this.availability = availability;
         this.timeSlot = timeSlot;
@@ -53,15 +53,6 @@ public class BookFacility extends Member {
                 ", availability='" + availability + '\'' +
                 ", timeSlot=" + timeSlot +
                 ", seatCount=" + seatCount +
-                ", address='" + address + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", age=" + age +
-                ", nidNumber=" + nidNumber +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
                 '}';
     }
 }

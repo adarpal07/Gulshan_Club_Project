@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.Supplier.Controller.TrainingSuppliesViewController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Supplier.Controller.TrainingSuppliesViewController">
+   <children>
+      <Label layoutX="35.0" layoutY="84.0" text="PO NO" />
+      <Label layoutX="35.0" layoutY="163.0" text="Training Date" />
+      <Label layoutX="35.0" layoutY="124.0" text="Kitchen Location" />
+      <Label layoutX="35.0" layoutY="200.0" text="Propose Delivery Date to chef" />
+      <Label layoutX="317.0" layoutY="124.0" text="Quantity" />
+      <Label layoutX="320.0" layoutY="84.0" text="Item" />
+      <Label layoutX="221.0" layoutY="14.0" text="Chef training Program">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="poNoTextfield" layoutX="139.0" layoutY="80.0" />
+      <TextField fx:id="itemTextField" layoutX="392.0" layoutY="80.0" />
+      <TextField fx:id="kitchenLocatTextfield" layoutX="139.0" layoutY="120.0" />
+      <DatePicker fx:id="proposedeliveryDatetoChefDatepicker" layoutX="204.0" layoutY="196.0" prefHeight="25.0" prefWidth="140.0" />
+      <ComboBox fx:id="trainingDateComboBox" layoutX="156.0" layoutY="159.0" prefWidth="150.0" />
+      <TextField fx:id="quantityTextfield" layoutX="400.0" layoutY="120.0" />
+      <Label layoutX="35.0" layoutY="54.0" text="Supply management" />
+      <Button fx:id="confirmButton" layoutX="400.0" layoutY="196.0" mnemonicParsing="false" onAction="#confirmButton" text="Confirm" />
+      <Button fx:id="backButton" layoutX="454.0" layoutY="338.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+   </children>
 </AnchorPane>

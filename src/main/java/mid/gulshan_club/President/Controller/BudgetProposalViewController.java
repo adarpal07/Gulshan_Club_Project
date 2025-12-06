@@ -63,7 +63,7 @@ public class BudgetProposalViewController
             budgetProposalTableView.getItems().addAll(b);
 
         }
-        budgetProposalTableView.getItems().clear();
+
 
     }
 }

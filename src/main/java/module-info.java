@@ -18,6 +18,7 @@ open module mid.gulshan_club {
     //requires mid.gulshan_club;
     //requires mid.gulshan_club;
     //requires mid.gulshan_club;
+    //requires mid.gulshan_club;
 
 
     //opens mid.gulshan_club to javafx.fxml;

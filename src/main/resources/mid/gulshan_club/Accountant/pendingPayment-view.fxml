@@ -6,16 +6,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Accountant.Controller.PendingPaymentController">
    <children>
       <Text layoutX="332.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pending Payments" />
       <TableView fx:id="pendingPaymentTableView" layoutX="72.0" layoutY="78.0" prefHeight="274.0" prefWidth="707.0">
         <columns>
-          <TableColumn fx:id="memberColumn" prefWidth="175.0" text="Name of Member" />
-          <TableColumn fx:id="idColumn" prefWidth="179.0" text="Member ID" />
-            <TableColumn fx:id="amountColumn" prefWidth="183.0" text="Amount" />
-            <TableColumn fx:id="statusColumn" prefWidth="169.0" text="Status" />
+          <TableColumn fx:id="memberColumn" prefWidth="136.0" text="Name of Member" />
+          <TableColumn fx:id="idColumn" prefWidth="116.0" text="Member ID" />
+            <TableColumn fx:id="amountColumn" prefWidth="116.0" text="Amount" />
+            <TableColumn fx:id="statusColumn" prefWidth="117.0" text="Status" />
+            <TableColumn fx:id="monthColumn" minWidth="0.0" prefWidth="101.0" text="Month" />
+            <TableColumn fx:id="recordDateColumn" prefWidth="120.0" text="Record Date" />
         </columns>
       </TableView>
       <Button layoutX="72.0" layoutY="387.0" mnemonicParsing="false" onAction="#showPendingPaymentButton" text="Show Pending Payments" />

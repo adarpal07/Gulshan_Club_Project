@@ -4,17 +4,26 @@ import mid.gulshan_club.Employee;
 
 import java.time.LocalDate;
 
-public class RecordMembershipFee extends Employee {
-    protected String status, month;
-    protected int amount;
+public class RecordMembershipFee  {
+    protected String memberName, status, month;
+    protected int memberId, amount;
     protected LocalDate recordDate;
 
-    public RecordMembershipFee(long userId, String status, String month, int amount, LocalDate recordDate) {
-        super(userId);
+    public RecordMembershipFee(String memberName, String status, String month, int memberId, int amount, LocalDate recordDate) {
+        this.memberName = memberName;
         this.status = status;
         this.month = month;
+        this.memberId = memberId;
         this.amount = amount;
         this.recordDate = recordDate;
+    }
+
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
     }
 
     public String getStatus() {
@@ -31,6 +40,14 @@ public class RecordMembershipFee extends Employee {
 
     public void setMonth(String month) {
         this.month = month;
+    }
+
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
+        this.memberId = memberId;
     }
 
     public int getAmount() {
@@ -52,19 +69,12 @@ public class RecordMembershipFee extends Employee {
     @Override
     public String toString() {
         return "RecordMembershipFee{" +
-                "status='" + status + '\'' +
+                "memberName='" + memberName + '\'' +
+                ", status='" + status + '\'' +
                 ", month='" + month + '\'' +
+                ", memberId=" + memberId +
                 ", amount=" + amount +
                 ", recordDate=" + recordDate +
-                ", joiningDate=" + joiningDate +
-                ", salary=" + salary +
-                ", duration=" + duration +
-                ", department='" + department + '\'' +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
                 '}';
     }
 }

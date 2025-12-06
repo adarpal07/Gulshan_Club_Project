@@ -2,17 +2,19 @@ package mid.gulshan_club.Accountant.Model;
 
 import mid.gulshan_club.Employee;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class UpdateBillingInformation extends Employee {
-    protected String status, billMonth;
-    protected int amount;
+public class UpdateBillingInformation implements Serializable {
+    protected String status, billMonth, memberName;
+    protected int memberId, amount;
     protected LocalDate updatedDate;
 
-    public UpdateBillingInformation(long userId, String status, String billMonth, int amount, LocalDate updatedDate) {
-        super(userId);
+    public UpdateBillingInformation(String status, String billMonth, String memberName, int memberId, int amount, LocalDate updatedDate) {
         this.status = status;
         this.billMonth = billMonth;
+        this.memberName = memberName;
+        this.memberId = memberId;
         this.amount = amount;
         this.updatedDate = updatedDate;
     }
@@ -31,6 +33,22 @@ public class UpdateBillingInformation extends Employee {
 
     public void setBillMonth(String billMonth) {
         this.billMonth = billMonth;
+    }
+
+    public String getMemberName() {
+        return memberName;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
+
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
+        this.memberId = memberId;
     }
 
     public int getAmount() {
@@ -54,17 +72,10 @@ public class UpdateBillingInformation extends Employee {
         return "UpdateBillingInformation{" +
                 "status='" + status + '\'' +
                 ", billMonth='" + billMonth + '\'' +
+                ", memberName='" + memberName + '\'' +
+                ", memberId=" + memberId +
                 ", amount=" + amount +
                 ", updatedDate=" + updatedDate +
-                ", joiningDate=" + joiningDate +
-                ", salary=" + salary +
-                ", duration=" + duration +
-                ", department='" + department + '\'' +
-                ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", userId=" + userId +
-                ", phoneNo=" + phoneNo +
                 '}';
     }
 }
