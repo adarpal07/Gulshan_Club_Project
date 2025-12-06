@@ -54,7 +54,6 @@ public class viewEventFinancialReportController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -70,7 +69,6 @@ public class viewEventFinancialReportController
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         eventTableView.getItems().clear();
         eventTableView.getItems().addAll(records);
 

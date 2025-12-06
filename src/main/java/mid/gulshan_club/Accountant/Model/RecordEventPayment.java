@@ -2,9 +2,10 @@ package mid.gulshan_club.Accountant.Model;
 
 import mid.gulshan_club.Employee;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class RecordEventPayment  {
+public class RecordEventPayment implements Serializable {
     protected String eventName, venueName, month;
     protected int amount, eventTime;
     protected LocalDate eventDate, recordDate;
