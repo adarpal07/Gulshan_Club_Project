@@ -27,6 +27,9 @@ public class BudgetProposalViewController
 
     ArrayList<BudgetProposal> budgetList = new ArrayList<BudgetProposal>();
     @javafx.fxml.FXML
+    private TableColumn<BudgetProposal,String> categoryTableColumn;
+
+    @javafx.fxml.FXML
     public void initialize() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("BudgetObjects.bin"))) {
             try {
@@ -45,6 +48,7 @@ public class BudgetProposalViewController
         titleTableColumn.setCellValueFactory(new PropertyValueFactory<BudgetProposal,String>("budgetTitle"));
         amountTableColumn.setCellValueFactory(new PropertyValueFactory<BudgetProposal,Double>("totalAmount"));
         justificationTableColumn.setCellValueFactory(new PropertyValueFactory<BudgetProposal,String>("justification"));
+        categoryTableColumn.setCellValueFactory(new PropertyValueFactory<BudgetProposal,String>("category"));
 
     }
 
@@ -59,9 +63,10 @@ public class BudgetProposalViewController
     @javafx.fxml.FXML
     public void loadBudgetProposalButtonOnAction(ActionEvent actionEvent) {
 
+
+
         for(BudgetProposal b : budgetList){
             budgetProposalTableView.getItems().addAll(b);
-
         }
 
 

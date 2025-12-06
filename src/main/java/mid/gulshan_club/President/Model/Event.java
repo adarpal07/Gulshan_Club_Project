@@ -1,8 +1,9 @@
 package mid.gulshan_club.President.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Event {
+public class Event implements Serializable {
     private String eventTitle, description, venue, time;
     private LocalDate eventDate;
 

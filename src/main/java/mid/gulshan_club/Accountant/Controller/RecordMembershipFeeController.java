@@ -40,7 +40,6 @@ public class RecordMembershipFeeController
 
     @javafx.fxml.FXML
     public void recordPaymentButton(ActionEvent actionEvent) {
-
         if (nameTextfield.getText().isBlank()) {
             errorAlert("Member name cannot be blank!");
             return;

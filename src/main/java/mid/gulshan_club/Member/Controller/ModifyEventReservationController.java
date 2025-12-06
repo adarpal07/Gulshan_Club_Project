@@ -63,7 +63,6 @@ public class ModifyEventReservationController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -75,16 +74,13 @@ public class ModifyEventReservationController
                 records.add(r);
             }
         } catch (EOFException eof) {
-            errorAlert("End of file reached");
+            informationAlert("Click Ok to Load Data");
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         eventDataTableView.getItems().clear();
         eventDataTableView.getItems().addAll(records);
     }
-
-
 
     @javafx.fxml.FXML
     public void reservationModifyButton(ActionEvent actionEvent) {
@@ -111,7 +107,7 @@ public class ModifyEventReservationController
                 Integer.parseInt(seatTextfield.getText())
         );
         try {
-            File file = new File("SeatReservation.bin");
+            File file = new File("ModifiedSeatReservation.bin");
             FileOutputStream fos;
             ObjectOutputStream oos;
 
@@ -122,7 +118,6 @@ public class ModifyEventReservationController
                 fos = new FileOutputStream(file);
                 oos = new ObjectOutputStream(fos);
             }
-
             oos.writeObject(sr);
             oos.close();
             informationAlert("Seat reservation modified successfully!");

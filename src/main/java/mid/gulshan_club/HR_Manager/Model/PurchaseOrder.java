@@ -1,8 +1,10 @@
 package mid.gulshan_club.HR_Manager.Model;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class PurchaseOrder {
+public class PurchaseOrder implements Serializable {
     private String itemName, itemDescription, itemQuantity, deliveyLocation;
     private LocalDate deliveryDate;
 
