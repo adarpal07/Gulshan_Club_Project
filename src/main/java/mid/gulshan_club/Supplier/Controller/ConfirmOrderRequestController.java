@@ -1,49 +1,71 @@
 package mid.gulshan_club.Supplier.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-import javax.swing.table.TableColumn;
-import javax.swing.text.TableView;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+public class ConfirmOrderRequestController {
 
-public class ConfirmOrderRequestController
-{
-    @javafx.fxml.FXML
-    private TableColumn reqNumColumn;
-    @javafx.fxml.FXML
-    private TableColumn reqDateColumn;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<?, ?> reqNumColumn;
+
+    @FXML
+    private TableColumn<?, ?> reqDateColumn;
+
+    @FXML
     private TextField amountTextfield;
-    @javafx.fxml.FXML
-    private ComboBox statusCombobox;
-    @javafx.fxml.FXML
-    private TableColumn statusColumn;
-    @javafx.fxml.FXML
-    private TableView reqTableView;
-    @javafx.fxml.FXML
-    private TableColumn amountColumn;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> statusCombobox;
+
+    @FXML
+    private TableColumn<?, ?> statusColumn;
+
+    @FXML
+    private TableView<?> reqTableView;
+
+    @FXML
+    private TableColumn<?, ?> amountColumn;
+
+    @FXML
     private Button backButton;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField reqNumTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private DatePicker requestDatePicker;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        // This method is called automatically after the FXML is loaded
+        // Initialize table columns, combo box values, etc.
+
+        statusCombobox.getItems().addAll(
+                "Pending",
+                "Approved",
+                "Rejected"
+        );
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void loadataButton(ActionEvent actionEvent) {
+        // TODO: load data into reqTableView
+        // Example: fetch order requests from database
     }
 
-    @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
+    @FXML
     public void saveButton(ActionEvent actionEvent) {
+        // TODO: save/update selected order status
+    }
+
+    @FXML
+    public void backButton(ActionEvent actionEvent) {
+        // TODO: navigate back to previous screen
     }
 }

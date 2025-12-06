@@ -9,9 +9,9 @@ import java.awt.event.ActionEvent;
 public class PolicyDocumentViewController
 {
     @javafx.fxml.FXML
-    private ComboBox dressCodeCombobox;
+    private ComboBox<String > dressCodeCombobox;
     @javafx.fxml.FXML
-    private ComboBox descriptionCombobox;
+    private ComboBox<String > descriptionCombobox;
     @javafx.fxml.FXML
     private Label outputLabel;
     @javafx.fxml.FXML

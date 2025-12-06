@@ -1,47 +1,61 @@
 package mid.gulshan_club.Guest_Member.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-import javax.swing.table.TableColumn;
-import javax.swing.text.TableView;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+public class CLubEventViewController {
 
-public class CLubEventViewController
-{
-    @javafx.fxml.FXML
-    private TableColumn timeColumn;
-    @javafx.fxml.FXML
+    @FXML
+    private TableColumn<?, ?> timeColumn;
+
+    @FXML
     private TextField eventNameTextfield;
-    @javafx.fxml.FXML
-    private TableColumn locationColumn;
-    @javafx.fxml.FXML
-    private TableView ClubEventTableview;
-    @javafx.fxml.FXML
-    private TableColumn evetNameColumn;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<?, ?> locationColumn;
+
+    @FXML
+    private TableView<?> ClubEventTableview;
+
+    @FXML
+    private TableColumn<?, ?> evetNameColumn;
+
+    @FXML
     private TextField timeTextField;
-    @javafx.fxml.FXML
-    private TableColumn dateColumn;
-    @javafx.fxml.FXML
-    private ComboBox locationCombobox;
-    @javafx.fxml.FXML
+
+    @FXML
+    private TableColumn<?, ?> dateColumn;
+
+    @FXML
+    private ComboBox<String> locationCombobox;
+
+    @FXML
     private DatePicker dateDatepicker;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        // TODO: initialize table columns, combo box, etc.
+        // Example: Hall A, Hall B, Hall B
+        // locationCombobox.getItems().addAll("Hall A", "Hall B", "Hall B");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void refreshButton(ActionEvent actionEvent) {
+        // TODO: reload events into ClubEventTableview
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void requestToAttendButton(ActionEvent actionEvent) {
+        // TODO: handle request to attend selected event
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void backToDashboardbutton(ActionEvent actionEvent) {
+        // TODO: navigate back to dashboard scene
     }
 }

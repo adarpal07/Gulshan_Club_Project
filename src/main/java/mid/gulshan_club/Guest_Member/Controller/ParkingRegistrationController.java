@@ -1,36 +1,55 @@
 package mid.gulshan_club.Guest_Member.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
+public class ParkingRegistrationController {
 
-public class ParkingRegistrationController
-{
-    @javafx.fxml.FXML
+    @FXML
     private TextField modelTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField memberIdTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private ComboBox<String> parkingDurationComboBox;
-    @javafx.fxml.FXML
+
+    @FXML
     private Button backButton;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField licensePlateNumberTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField brandTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField nameTextfield;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        parkingDurationComboBox.getItems().addAll(
+                "1 Hour",
+                "2 Hours",
+                "3 Hours",
+                "Half Day",
+                "Full Day"
+        );
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void registarButton(ActionEvent actionEvent) {
+        // TODO: Add parking registration logic
+        // Example:
+        // - Validate input fields
+        // - Save parking registration data
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void backButton(ActionEvent actionEvent) {
+        // TODO: Navigate back to previous screen/dashboard
     }
 }

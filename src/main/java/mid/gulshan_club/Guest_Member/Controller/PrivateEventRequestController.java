@@ -1,42 +1,78 @@
 package mid.gulshan_club.Guest_Member.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
+public class PrivateEventRequestController {
 
-public class PrivateEventRequestController
-{
-    @javafx.fxml.FXML
+    @FXML
     private TextArea AddiNotesTextarea;
-    @javafx.fxml.FXML
-    private ComboBox cateringServiceCombobox;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> cateringServiceCombobox;
+
+    @FXML
     private TextField memberIDTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField reqDateTextfield;
-    @javafx.fxml.FXML
-    private ComboBox eventTypeCombobox;
-    @javafx.fxml.FXML
-    private ComboBox conventionHallsComboBox;
-    @javafx.fxml.FXML
-    private ComboBox estimatedGuestCombobox;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> eventTypeCombobox;
+
+    @FXML
+    private ComboBox<String> conventionHallsComboBox;
+
+    @FXML
+    private ComboBox<String> estimatedGuestCombobox;
+
+    @FXML
     private TextField nameTextfield;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        eventTypeCombobox.getItems().addAll(
+                "Wedding",
+                "Corporate Event",
+                "Anniversary"
+        );
+        cateringServiceCombobox.getItems().addAll(
+                "In-house Catering",
+                "External Catering",
+                "No Catering"
+        );
+        conventionHallsComboBox.getItems().addAll(
+                "Banquet Hall A",
+                "Banquet Hall B",
+                "Convention Hall"
+        );
+        estimatedGuestCombobox.getItems().addAll(
+                "50–100",
+                "100–200",
+                "200–300",
+                "300+"
+        );
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void submitButton(ActionEvent actionEvent) {
+        // TODO: Validate inputs and submit private event request
+        // Example:
+        // - Check required fields
+        // - Save data to database
+        // - Show confirmation alert
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void cancelButton(ActionEvent actionEvent) {
+        // TODO: Clear form fields or reset selections
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void backButton(ActionEvent actionEvent) {
+        // TODO: Navigate back to dashboard or previous screen
     }
 }

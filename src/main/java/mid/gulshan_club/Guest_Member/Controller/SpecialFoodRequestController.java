@@ -1,51 +1,79 @@
 package mid.gulshan_club.Guest_Member.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
+public class SpecialFoodRequestController {
 
-public class SpecialFoodRequestController
-{
-    @javafx.fxml.FXML
+    @FXML
     private TextArea additionalNotexTextarea;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField bookingIdTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private Button backButton;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField reqTimeTextfield;
-    @javafx.fxml.FXML
-    private ComboBox numberOfservingsComboBox;
-    @javafx.fxml.FXML
+
+    @FXML
+    private ComboBox<String> numberOfservingsComboBox;
+
+    @FXML
     private DatePicker visitDateDatepicker;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField foodTypeTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private Button submitBychefButton;
-    @javafx.fxml.FXML
+
+    @FXML
     private TextField reqspecDishTextfield;
-    @javafx.fxml.FXML
+
+    @FXML
     private Button saveButton;
 
-    @javafx.fxml.FXML
+    @FXML
     public void initialize() {
+        // Called automatically after FXML is loaded
+        // Used to initialize UI components
+
+        numberOfservingsComboBox.getItems().addAll(
+                "1 Serving",
+                "2 Servings",
+                "3 Servings",
+                "4+ Servings"
+        );
     }
 
-    @Deprecated
-    public void submitButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
+    @FXML
     public void backButton(ActionEvent actionEvent) {
+        // TODO: Navigate back to previous screen/dashboard
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void saveButton(ActionEvent actionEvent) {
+        // TODO: Save food request (without final submission)
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void submitBychefButton(ActionEvent actionEvent) {
+        // TODO: Submit food request to chef
     }
+
+    // If still referenced in FXML, keep it; otherwise it can be removed
+    @Deprecated
+    @FXML
+    public void submitButton(ActionEvent actionEvent) {
+        // Deprecated – no longer used
+        // Kept only to avoid FXML runtime errors
+    }
+
 }
