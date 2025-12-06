@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Club_Manager.Controller.FinanceViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.ClubManager.Controller.FinanceViewController">
    <children>
       <Label layoutX="265.0" layoutY="41.0" text="Finance">
          <font>
@@ -17,8 +16,8 @@
       <TableView fx:id="FinanceTableView" layoutY="80.0" prefHeight="320.0" prefWidth="602.0">
         <columns>
           <TableColumn fx:id="EventNameTableColumn" prefWidth="164.00000607967377" text="Event Name" />
-          <TableColumn fx:id="TotalIncomeTableColumn" prefWidth="132.0" text="Total Income" />
-            <TableColumn fx:id="TotalExpenseTableColumn" prefWidth="171.199951171875" text="Total Expense" />
+          <TableColumn fx:id="TotalIncomeTableColumn" prefWidth="237.5999755859375" text="Total Income" />
+            <TableColumn fx:id="TotalExpenseTableColumn" prefWidth="199.20004272460938" text="Total Expense" />
         </columns>
       </TableView>
    </children>
