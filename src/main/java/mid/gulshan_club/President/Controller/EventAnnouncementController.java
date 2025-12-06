@@ -6,12 +6,11 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import mid.gulshan_club.AppendableObjectOutputStream;
-import mid.gulshan_club.President.Model.EventAnnouncement;
+import mid.gulshan_club.President.Model.Event;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class EventAnnouncementController
@@ -31,7 +30,7 @@ public class EventAnnouncementController
     public void initialize() {
     }
 
-    ArrayList<EventAnnouncement> eventList = new ArrayList<EventAnnouncement>();
+    ArrayList<Event> eventList = new ArrayList<Event>();
 
     @javafx.fxml.FXML
     public void saveAndAnnounceEventButtonOnAction(ActionEvent actionEvent) {
@@ -54,7 +53,7 @@ public class EventAnnouncementController
                 oos = new ObjectOutputStream(fosObject);
 
             }
-            for (EventAnnouncement i : eventList ){
+            for (Event i : eventList ){
                 oos.writeObject(i);
 
             }
@@ -69,7 +68,7 @@ public class EventAnnouncementController
 
     @javafx.fxml.FXML
     public void createEventButtonOnAction(ActionEvent actionEvent) {
-        EventAnnouncement e = new EventAnnouncement(
+        Event e = new Event(
                 eventTitleTextField.getText(),
                 eventDescriptionTextArea.getText(),
                 eventVenueTextarea.getText(),

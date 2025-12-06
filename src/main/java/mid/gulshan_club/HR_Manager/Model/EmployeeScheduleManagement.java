@@ -3,7 +3,7 @@ package mid.gulshan_club.HR_Manager.Model;
 import java.io.Serializable;
 
 public class EmployeeScheduleManagement implements Serializable {
-    private long employeeId;
+    private  long  employeeId;
     private String shiftStartTime;
     private String shiftEndTime;
     private String shiftType;
