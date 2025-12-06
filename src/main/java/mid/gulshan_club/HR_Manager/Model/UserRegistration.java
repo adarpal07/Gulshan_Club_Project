@@ -4,13 +4,17 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class UserRegistration implements Serializable {
-    private long id;
+    private  long id;
     private String name, type, department, address, email, gender;
     private LocalDate dateOfJoining;
-    private int phoneNumber, nID;
+    private int phoneNumber;
 
     public UserRegistration() {
     }
+
+    private int nID;
+
+
 
     public UserRegistration(long id, String name, String type, String department, String address, String email, String gender, LocalDate dateOfJoining, int phoneNumber, int nID) {
         this.id = id;

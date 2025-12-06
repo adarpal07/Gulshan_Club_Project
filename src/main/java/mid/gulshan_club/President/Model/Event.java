@@ -1,17 +1,16 @@
 package mid.gulshan_club.President.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 
-public class EventAnnouncement {
+public class Event implements Serializable {
     private String eventTitle, description, venue, time;
     private LocalDate eventDate;
 
-    public EventAnnouncement() {
+    public Event() {
     }
 
-    public EventAnnouncement(String eventTitle, String description, String venue, String time, LocalDate eventDate) {
+    public Event(String eventTitle, String description, String venue, String time, LocalDate eventDate) {
         this.eventTitle = eventTitle;
         this.description = description;
         this.venue = venue;

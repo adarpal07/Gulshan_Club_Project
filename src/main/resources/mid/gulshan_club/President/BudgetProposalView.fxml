@@ -11,11 +11,12 @@
    <children>
       <Label layoutX="22.0" layoutY="238.0" text="Budget Category for Approval" />
       <ComboBox fx:id="budgetCategoryComboBox" layoutX="192.0" layoutY="234.0" prefWidth="150.0" />
-      <TableView fx:id="budgetProposalTableView" layoutX="22.0" layoutY="71.0" prefHeight="147.0" prefWidth="387.0">
+      <TableView fx:id="budgetProposalTableView" layoutX="22.0" layoutY="71.0" prefHeight="147.0" prefWidth="437.0">
         <columns>
           <TableColumn fx:id="titleTableColumn" prefWidth="101.99996948242188" text="Budget Title" />
-          <TableColumn fx:id="amountTableColumn" prefWidth="148.66668701171875" text="Budget Amount" />
-            <TableColumn fx:id="justificationTableColumn" prefWidth="148.66668701171875" text="Justification" />
+          <TableColumn fx:id="amountTableColumn" prefWidth="97.33330535888672" text="Budget Amount" />
+            <TableColumn fx:id="categoryTableColumn" prefWidth="120.66664123535156" text="Category" />
+            <TableColumn fx:id="justificationTableColumn" prefWidth="120.66664123535156" text="Justification" />
         </columns>
       </TableView>
       <Button layoutX="22.0" layoutY="29.0" mnemonicParsing="false" onAction="#loadBudgetProposalButtonOnAction" text="Load Budget Proposal " />

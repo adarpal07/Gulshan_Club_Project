@@ -41,7 +41,7 @@ public class UserRegistrationController
     public void initialize() {
 
         userTypeComboBox.getItems().addAll("General Member","Guest Member","Chef","Accountant","Club Manager","Supplier","");
-        departmentComboBox.getItems().addAll("Administration","Accounts & Finance","Kitchen","Membership","Procurement");
+        departmentComboBox.getItems().addAll("Management","Accounts & Finance","Kitchen","Membership","Procurement");
         genderComboBox.getItems().addAll("Male","Female");
 
     }

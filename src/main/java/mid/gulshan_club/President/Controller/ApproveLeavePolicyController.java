@@ -1,6 +1,7 @@
 package mid.gulshan_club.President.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -40,11 +41,15 @@ public class ApproveLeavePolicyController
 
     @javafx.fxml.FXML
     public void approveAndSaveButtonOnaction(ActionEvent actionEvent) {
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setHeaderText("Approved");
+        a.showAndWait();
     }
 
     ArrayList<LeavePolicyUpdate> policyList = new ArrayList<LeavePolicyUpdate>();
     @javafx.fxml.FXML
     public void viewLeavePolicyRequestButtonOnAction(ActionEvent actionEvent) {
+
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("LeavePolicyUpdateObjects.bin"))) {
             try {
                 LeavePolicyUpdate p = null;
@@ -58,9 +63,15 @@ public class ApproveLeavePolicyController
         } catch (Exception e) {
 
         }
-        for (LeavePolicyUpdate i : policyList){
+        if(policyList.isEmpty()){
+            Alert a = new Alert(Alert.AlertType.INFORMATION);
+            a.setHeaderText("No Leave Policy Update requested");
+            a.showAndWait();
+        }
+        for(LeavePolicyUpdate i : policyList){
             leavePolicyUpdateTableView.getItems().addAll(i);
         }
+
     }
 
 

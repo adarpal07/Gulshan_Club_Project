@@ -1,8 +1,9 @@
 package mid.gulshan_club.HR_Manager.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Task {
+public class Task implements Serializable {
     private String taskTitle, taskDescription, assignedTo;
     private LocalDate dueDate;
 

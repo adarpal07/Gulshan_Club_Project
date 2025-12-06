@@ -37,6 +37,7 @@ public class LeavePolicyUpdateController
 
     @javafx.fxml.FXML
     public void sendLeavePolicyUpdateRequestButtonOnAction(ActionEvent actionEvent) {
+        System.out.print(leavePolicyList);
         ObjectOutputStream oos = null;
         try{
             File objectFile = new File("LeavePolicyUpdateObjects.bin");
@@ -83,7 +84,6 @@ public class LeavePolicyUpdateController
                 effectiveDateDatePicker.getValue()
         );
         leavePolicyList.add(leavePolicy);
-
         currentLeavePolicyTextArea.clear();
         proposedLeavepolicyTextArea.clear();
 

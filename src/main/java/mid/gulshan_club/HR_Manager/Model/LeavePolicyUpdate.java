@@ -1,8 +1,9 @@
 package mid.gulshan_club.HR_Manager.Model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class LeavePolicyUpdate {
+public class LeavePolicyUpdate implements Serializable {
     private String leaveType , currentPolicy, proposedPolicy, eligibility;
     private  LocalDate  effectiveDate;
 

@@ -1,10 +1,7 @@
 package mid.gulshan_club.President.Controller;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import mid.gulshan_club.AppendableObjectOutputStream;
 import mid.gulshan_club.HR_Manager.Model.UserRegistration;
 import mid.gulshan_club.President.Model.MembershipPolicy;
@@ -52,6 +49,9 @@ public class MembershipPolicyController
                 oos.writeObject(i);
             }
             oos.close();
+            Alert a = new Alert(Alert.AlertType.INFORMATION);
+            a.setHeaderText("Policy is saved");
+            a.showAndWait();
         }
         catch (Exception e){
 
@@ -70,5 +70,9 @@ public class MembershipPolicyController
         policyList.add(mp);
         policyTitleTextField.clear();
         policyDescriptionTextArea.clear();
+
+        Alert a = new Alert(Alert.AlertType.INFORMATION);
+        a.setHeaderText("Policy is created");
+        a.showAndWait();
     }
 }
