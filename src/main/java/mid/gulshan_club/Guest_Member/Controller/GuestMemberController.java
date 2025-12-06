@@ -105,4 +105,12 @@ public class GuestMemberController {
         stage.setScene(scene);
         stage.show();
     }
+    private void switchScene(ActionEvent event, String fxmlPath, String title) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlPath));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle(title);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
