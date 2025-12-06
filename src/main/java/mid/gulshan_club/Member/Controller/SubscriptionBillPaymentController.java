@@ -88,7 +88,6 @@ public class SubscriptionBillPaymentController
             oos.close();
             informationAlert("Subscription bill payment saved successfully!");
 
-
         } catch (Exception e) {
             errorAlert("Error saving data to file!");
         }

@@ -62,7 +62,6 @@ public class PaymentHistoryController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -74,11 +73,10 @@ public class PaymentHistoryController
                 records.add(r);
             }
         } catch (EOFException eof) {
-            errorAlert("End of file reached");
+            informationAlert("Click Ok to Load Data");
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         paymentHistoryTableView.getItems().clear();
         paymentHistoryTableView.getItems().addAll(records);
     }
