@@ -9,11 +9,7 @@ import java.awt.event.ActionEvent;
 public class SpecialFoodRequestController
 {
     @javafx.fxml.FXML
-    private TextField reqspecDish1Textfield;
-    @javafx.fxml.FXML
     private TextArea additionalNotexTextarea;
-    @javafx.fxml.FXML
-    private TextField reqSpecDish2Textfield;
     @javafx.fxml.FXML
     private TextField bookingIdTextfield;
     @javafx.fxml.FXML
@@ -26,12 +22,18 @@ public class SpecialFoodRequestController
     private DatePicker visitDateDatepicker;
     @javafx.fxml.FXML
     private TextField foodTypeTextfield;
+    @javafx.fxml.FXML
+    private Button submitBychefButton;
+    @javafx.fxml.FXML
+    private TextField reqspecDishTextfield;
+    @javafx.fxml.FXML
+    private Button saveButton;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void submitButton(ActionEvent actionEvent) {
     }
 
@@ -41,5 +43,9 @@ public class SpecialFoodRequestController
 
     @javafx.fxml.FXML
     public void saveButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void submitBychefButton(ActionEvent actionEvent) {
     }
 }
