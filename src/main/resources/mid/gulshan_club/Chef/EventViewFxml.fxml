@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.EventViewController">
+<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Chef.Controller.EventViewController">
    <children>
       <Label layoutX="326.0" layoutY="14.0" text="Event Detalis" />
       <Button layoutX="41.0" layoutY="54.0" mnemonicParsing="false" onAction="#BacktoDashBoardButtonOnAction" text="Back to DshBoard" />

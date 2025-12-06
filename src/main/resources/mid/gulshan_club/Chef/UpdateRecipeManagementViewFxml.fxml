@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-
-<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.RecipeCostManagementViewController">
+<AnchorPane prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Chef.Controller.UpdateRecipeManagementViewController">
    <children>
       <Label layoutX="293.0" layoutY="14.0" text="Update Recipe Management" />
       <TableView fx:id="MenupalnningTableView" layoutX="26.0" layoutY="273.0" prefHeight="150.0" prefWidth="554.0">
@@ -28,5 +27,6 @@
       <ComboBox layoutX="120.0" layoutY="68.0" prefWidth="150.0" />
       <Label layoutX="36.0" layoutY="127.0" text=" Enter Upadted Recipe: " />
       <TextArea layoutX="36.0" layoutY="152.0" prefHeight="108.0" prefWidth="420.0" />
+      <Button layoutX="604.0" layoutY="387.0" mnemonicParsing="false" onAction="#BacktoDashBoardButtonOnAction" text="Back to DashBoard" />
    </children>
 </AnchorPane>

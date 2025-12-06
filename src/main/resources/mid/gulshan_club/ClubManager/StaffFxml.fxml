@@ -4,35 +4,53 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="StaffDetailsAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="StaffDetailsAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.ClubManager.Controller.StaffFxmlController">
    <children>
-      <Label layoutX="271.0" layoutY="3.0" text="Staff">
+      <Label layoutX="359.0" layoutY="3.0" text="Staff">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TableView fx:id="CoordinatorsTableView" layoutX="2.0" layoutY="273.0" prefHeight="155.0" prefWidth="606.0">
+      <TableView fx:id="CoordinatorsTableView" layoutX="2.0" layoutY="347.0" prefHeight="106.0" prefWidth="750.0">
         <columns>
-          <TableColumn fx:id="EventCoordinatorNameTableColumn" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="EventCoordinatorContactTableColumn" prefWidth="75.0" text="Contact" />
-            <TableColumn fx:id="EventCoordinatorAddressColumn" prefWidth="75.0" text="Address" />
-            <TableColumn fx:id="EventCoordinatorSalaryTableColumn" prefWidth="75.0" text="Salary" />
+          <TableColumn fx:id="EventCoordinatorNameTableColumn" prefWidth="134.39998769760132" text="Name" />
+          <TableColumn fx:id="EventCoordinatorContactTableColumn" prefWidth="196.79998779296875" text="Contact" />
+            <TableColumn fx:id="EventCoordinatorAddressColumn" prefWidth="190.40005493164062" text="Address" />
+            <TableColumn fx:id="EventCoordinatorSalaryTableColumn" prefWidth="228.79998779296875" text="Salary" />
         </columns>
       </TableView>
-      <TableView fx:id="EventChefTableView" layoutX="1.0" layoutY="113.0" prefHeight="130.0" prefWidth="606.0">
+      <TableView fx:id="EventChefTableView" layoutX="1.0" layoutY="224.0" prefHeight="96.0" prefWidth="750.0">
         <columns>
-          <TableColumn fx:id="EventChefNameTableColumn" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="EventChefContactTableColumn" prefWidth="75.0" text="Contact" />
-            <TableColumn fx:id="EventChefSAddressTableColumn" prefWidth="75.0" text="Address " />
-            <TableColumn fx:id="EventChefSalaryTableColumn" prefWidth="75.0" text="Salary" />
+          <TableColumn fx:id="EventChefNameTableColumn" prefWidth="129.60000002384186" text="Name" />
+          <TableColumn fx:id="EventChefContactTableColumn" prefWidth="194.39996337890625" text="Contact" />
+            <TableColumn fx:id="EventChefSAddressTableColumn" prefWidth="191.20010375976562" text="Address " />
+            <TableColumn fx:id="EventChefSalaryTableColumn" minWidth="4.800048828125" prefWidth="232.800048828125" text="Salary" />
         </columns>
       </TableView>
-      <Label layoutX="262.0" layoutY="91.0" text="Event Chefs" textFill="#0a4dc9" />
-      <Label layoutX="258.0" layoutY="255.0" text="Coordinators" textFill="#0651dc" />
-      <Button layoutX="488.0" layoutY="40.0" mnemonicParsing="false" onAction="#AddNewStaffButtonOnAction" text="Add New Staff" />
+      <Label layoutX="345.0" layoutY="207.0" text="Event Chefs" textFill="#0a4dc9" />
+      <Label layoutX="339.0" layoutY="329.0" text="Coordinators" textFill="#0651dc" />
+      <Button layoutX="253.0" layoutY="167.0" mnemonicParsing="false" onAction="#AddNewChefButtonOnAction" text="Add New Chef" />
+      <Text layoutX="47.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chef Name:" />
+      <Text layoutX="47.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" />
+      <Text layoutX="47.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+      <Text layoutX="47.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:" />
+      <TextField fx:id="XhefNameTextField" layoutX="116.0" layoutY="40.0" />
+      <TextField fx:id="ChefContactTextField" layoutX="102.0" layoutY="84.0" />
+      <TextField fx:id="ChefAddressTextField" layoutX="103.0" layoutY="123.0" />
+      <TextField fx:id="ChefSalaryTextField" layoutX="92.0" layoutY="167.0" />
+      <Text layoutX="414.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordinator Name:" />
+      <Text layoutX="414.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:" />
+      <Text layoutX="413.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+      <Text layoutX="418.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:" />
+      <TextField fx:id="CoordinateNameTextField" layoutX="527.0" layoutY="40.0" />
+      <TextField fx:id="CoordinateContactTextField" layoutX="469.0" layoutY="84.0" />
+      <TextField fx:id="CoordinateAddressTextField" layoutX="469.0" layoutY="130.0" />
+      <TextField fx:id="CoordinateSalaryTextField" layoutX="458.0" layoutY="167.0" />
+      <Button layoutX="608.0" layoutY="194.0" mnemonicParsing="false" onAction="#AddNewCoordinateButtonOnAction" text="Add New Coordinatror" />
    </children>
 </AnchorPane>
