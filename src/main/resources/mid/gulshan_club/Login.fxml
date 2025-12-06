@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.LoginController">
+   <children>
+      <Label layoutX="293.0" layoutY="197.0" text="Enter ID:" />
+      <Label layoutX="293.0" layoutY="239.0" text="Enter Password:" />
+      <TextField fx:id="loginIdTextField" layoutX="408.0" layoutY="193.0" />
+      <TextField fx:id="loginPasswordTextfield" layoutX="408.0" layoutY="235.0" />
+      <Button layoutX="505.0" layoutY="282.0" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Login" />
+      <Text layoutX="348.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Gulshan Club Portal" />
+   </children>
+</AnchorPane>

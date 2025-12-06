@@ -2,9 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
@@ -12,18 +11,18 @@
    <children>
       <Text layoutX="81.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Month" />
       <ComboBox fx:id="monthComboBox" layoutX="241.0" layoutY="106.0" prefWidth="150.0" />
-      <TableView fx:id="reportTableView" layoutX="81.0" layoutY="154.0" prefHeight="215.0" prefWidth="676.0">
-         <columns>
-            <TableColumn fx:id="nameColumn" prefWidth="222.0" text="Name of Member / Event" />
-            <TableColumn fx:id="dateColumn" prefWidth="241.0" text="Date of Record" />
-            <TableColumn fx:id="amountColumn" prefWidth="212.0" text="Amount" />
-         </columns>
-      </TableView>
-      <Text layoutX="81.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The total amount is =" />
-      <Label fx:id="totalAmountLabel" layoutX="210.0" layoutY="395.0" prefHeight="32.0" prefWidth="166.0" text="Label" />
-      <Button layoutX="81.0" layoutY="445.0" mnemonicParsing="false" onAction="#generateReportButton" prefHeight="25.0" prefWidth="143.0" text="Generate Report" />
       <Button layoutX="641.0" layoutY="445.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
-      <Button layoutX="486.0" layoutY="106.0" mnemonicParsing="false" onAction="#loadDataButton" prefHeight="25.0" prefWidth="143.0" text="Load Data" />
       <Text layoutX="296.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Monthly Financial Repoer " />
+      <Text layoutX="81.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of total Cost" />
+      <Text layoutX="446.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Profit" />
+      <Text layoutX="446.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorded By" />
+      <Text layoutX="81.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Year" />
+      <TextField fx:id="yearTextfield" layoutX="242.0" layoutY="154.0" />
+      <TextField fx:id="costTextfield" layoutX="242.0" layoutY="193.0" />
+      <TextField fx:id="profitTextfield" layoutX="607.0" layoutY="100.0" />
+      <TextField fx:id="recorderTextfield" layoutX="607.0" layoutY="143.0" />
+      <Text layoutX="446.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Record" />
+      <DatePicker fx:id="recordDatePicker" layoutX="607.0" layoutY="192.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="83.0" layoutY="257.0" mnemonicParsing="false" onAction="#generateButton" text="Generate Report" />
    </children>
 </AnchorPane>

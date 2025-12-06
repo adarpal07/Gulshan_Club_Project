@@ -47,7 +47,7 @@ public class BookFacilityController
 
     @javafx.fxml.FXML
     public void loadDataButton(ActionEvent actionEvent) throws IOException {
-        File file = new File("ClubFacilities.bin");
+        File file = new File("ClubFacility.bin");
 
         if (!file.exists()) {
             System.out.println("Bin file dose not exist");
@@ -65,7 +65,7 @@ public class BookFacilityController
                 records.add(r);
             }
         } catch (EOFException eof) {
-            errorAlert("End of file reached");
+            informationAlert("Click Ok to Load data");
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
