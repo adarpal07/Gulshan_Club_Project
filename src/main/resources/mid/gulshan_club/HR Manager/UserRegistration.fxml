@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.HR_Manager.Controller.UserRegistrationController">
    <children>
       <Label layoutX="24.0" layoutY="40.0" text="ID Number" />
@@ -17,7 +16,7 @@
       <Label layoutX="23.0" layoutY="305.0" text="Gender" />
       <Label layoutX="21.0" layoutY="267.0" text="Phone Number" />
       <Label layoutX="20.0" layoutY="234.0" text="Email Adress" />
-      <Label fx:id="emailAddressTextField" layoutX="25.0" layoutY="200.0" text="Address" />
+      <Label layoutX="25.0" layoutY="200.0" text="Address" />
       <Label layoutX="25.0" layoutY="169.0" text="Department" />
       <Label layoutX="23.0" layoutY="99.0" text="NID Number" />
       <TextField fx:id="idNumberTextField" layoutX="138.0" layoutY="36.0" />
@@ -25,7 +24,7 @@
       <TextField fx:id="nIDTextField" layoutX="138.0" layoutY="95.0" />
       <TextField fx:id="addressTextField" layoutX="136.0" layoutY="196.0" />
       <TextField fx:id="phoneNumberTextField" layoutX="136.0" layoutY="263.0" />
-      <TextField layoutX="136.0" layoutY="230.0" />
+      <TextField fx:id="emailAddressTextField" layoutX="136.0" layoutY="230.0" />
       <ComboBox fx:id="genderComboBox" layoutX="136.0" layoutY="301.0" prefWidth="150.0" />
       <DatePicker fx:id="joiningDateDatePicker" layoutX="138.0" layoutY="334.0" prefHeight="25.0" prefWidth="149.0" />
       <ComboBox fx:id="userTypeComboBox" layoutX="138.0" layoutY="128.0" prefWidth="150.0" />
