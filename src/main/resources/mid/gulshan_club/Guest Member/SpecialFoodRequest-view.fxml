@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.Guest_Member.Controller.SpecialFoodRequestController">
    <children>
       <Label layoutX="61.0" layoutY="99.0" text="Food Type" />
@@ -17,21 +16,19 @@
       <Label layoutX="329.0" layoutY="27.0" text="Book for Special Food Request" />
       <TextField fx:id="bookingIdTextfield" layoutX="169.0" layoutY="134.0" />
       <TextField fx:id="reqTimeTextfield" layoutX="566.0" layoutY="134.0" />
-      <TextField fx:id="reqSpecDish2Textfield" layoutX="566.0" layoutY="202.0" />
-      <TextField fx:id="reqspecDish1Textfield" layoutX="566.0" layoutY="167.0" />
+      <TextField fx:id="reqspecDishTextfield" layoutX="566.0" layoutY="167.0" />
       <TextField layoutX="174.0" layoutY="211.0" />
       <Label layoutX="390.0" layoutY="138.0" text="Requesting Time" />
-      <Label layoutX="390.0" layoutY="171.0" text="Specific Dish Requested 1" />
+      <Label layoutX="390.0" layoutY="171.0" text="Specific Dish Requested " />
       <Label layoutX="61.0" layoutY="138.0" text="Booking Id" />
       <Label layoutX="60.0" layoutY="171.0" text="Number of Servings" />
       <Label layoutX="390.0" layoutY="99.0" text="Visit Date" />
-      <Label layoutX="49.0" layoutY="219.0" text="Dietary Restrictions" />
+      <Label layoutX="49.0" layoutY="216.0" text="Dietary Restrictions" />
       <Label layoutX="57.0" layoutY="266.0" text="Additional Notes" />
       <DatePicker fx:id="visitDateDatepicker" layoutX="539.0" layoutY="87.0" />
       <TextArea fx:id="additionalNotexTextarea" layoutX="137.0" layoutY="299.0" prefHeight="115.0" prefWidth="205.0" />
-      <Button layoutX="443.0" layoutY="453.0" mnemonicParsing="false" onAction="#submitButton" text="Submit" />
-      <Button layoutX="53.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveButton" text="Save draft" />
+      <Button fx:id="submitBychefButton" layoutX="443.0" layoutY="453.0" mnemonicParsing="false" onAction="#submitBychefButton" text="Submit by chef" />
+      <Button fx:id="saveButton" layoutX="53.0" layoutY="441.0" mnemonicParsing="false" onAction="#saveButton" text="Save draft" />
       <Button fx:id="backButton" layoutX="694.0" layoutY="453.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
-      <Label layoutX="390.0" layoutY="203.0" text="Specific Dish Requested 2" />
    </children>
 </AnchorPane>
