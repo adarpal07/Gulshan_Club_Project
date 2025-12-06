@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ClubManager/FacilitiesFxml.fxml"));
         //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Member/memberDashboard-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hiiii");
+        stage.setTitle("Welcome to Gulshan Club Portal");
         stage.setScene(scene);
         stage.show();
     }

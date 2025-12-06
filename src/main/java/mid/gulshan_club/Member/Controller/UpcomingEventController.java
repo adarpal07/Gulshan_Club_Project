@@ -70,7 +70,7 @@ public class UpcomingEventController
                 records.add(r);
             }
         } catch (EOFException eof) {
-            errorAlert("End of file reached");
+            informationAlert("Click Ok to load Data");
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
