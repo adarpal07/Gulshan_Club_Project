@@ -13,7 +13,12 @@
       <Label layoutX="91.0" layoutY="147.0" text="Description" />
       <Label layoutX="38.0" layoutY="203.0" text="Booking and cancellation list" />
       <Button fx:id="acknowledgeButton" layoutX="54.0" layoutY="286.0" mnemonicParsing="false" onAction="#acknowledgeButton" text="Acknowledge" />
-      <Button fx:id="backButton" layoutX="427.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButton" text="Back to Dashboard" />
+       <Button fx:id="backButton"
+               layoutX="427.0"
+               layoutY="333.0"
+               mnemonicParsing="false"
+               onAction="#backButton"
+               text="Back to Dashboard"/>
       <ComboBox fx:id="dressCodeCombobox" layoutX="185.0" layoutY="88.0" prefWidth="150.0" />
       <ComboBox fx:id="descriptionCombobox" layoutX="185.0" layoutY="143.0" prefWidth="150.0" />
       <ComboBox layoutX="207.0" layoutY="199.0" prefWidth="150.0" />

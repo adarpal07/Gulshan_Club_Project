@@ -1,5 +1,6 @@
 package mid.gulshan_club.Supplier.Controller;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +18,7 @@ import mid.gulshan_club.HelloApplication;
 
 import java.io.IOException;
 
-public class ConfirmOrderRequestController {
+public class ConfirmOrderController {
 
     @FXML
     private TableColumn<?, ?> reqNumColumn;
@@ -48,7 +49,6 @@ public class ConfirmOrderRequestController {
 
     @FXML
     private DatePicker requestDatePicker;
-    private ActionEvent actionEvent;
 
     @FXML
     public void initialize() {
@@ -64,23 +64,8 @@ public class ConfirmOrderRequestController {
 
     @FXML
     public void loadataButton(ActionEvent actionEvent) {
-        this.actionEvent = actionEvent;
 
-        // For now, this button simply refreshes the table or
-        // notifies the user that data loading is successful.
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Load Data");
-        alert.setHeaderText(null);
-        alert.setContentText("Order request data loaded successfully.");
-        alert.showAndWait();
-
-        // Later, this is where you can:
-        // - Load data from file
-        // - Load data from database
-        // - Refresh TableView items
     }
-
 
     @FXML
     public void saveButton(ActionEvent actionEvent) {
@@ -136,3 +121,4 @@ public class ConfirmOrderRequestController {
         stage.show();
     }
 }
+
