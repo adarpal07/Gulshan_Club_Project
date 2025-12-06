@@ -106,7 +106,7 @@ public class SeatReservationController
 
     @javafx.fxml.FXML
     public void loadEventButton(ActionEvent actionEvent) throws IOException {
-        File file = new File("CreateEvent.bin");
+        File file = new File("EventInfo.bin");
 
         if (!file.exists()) {
             System.out.println("Bin file dose not exist");
@@ -123,11 +123,10 @@ public class SeatReservationController
                     records.add(r);
                 }
             } catch (EOFException eof) {
-                errorAlert("End of file reached");
+                informationAlert("Click Ok to Load Data");
             } catch (ClassNotFoundException | IOException cnf) {
                 errorAlert("Class not found!");
             }
-
             eventDataTableView.getItems().clear();
             eventDataTableView.getItems().addAll(records);
 

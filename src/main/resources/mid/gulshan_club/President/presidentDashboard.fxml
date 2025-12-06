@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mid.gulshan_club.President.Controller.PresidentDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mid.gulshan_club.President.Controller.PresidentDashboardController">
+   <children>
+      <Button layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewBudgetPropsalButtonOnAction" text="Approve Budget Proposal" />
+      <Button layoutX="28.0" layoutY="239.0" mnemonicParsing="false" onAction="#viewMeetingDetailButtonOnAction" text="View Meeting Details " />
+      <Button layoutX="27.0" layoutY="78.0" mnemonicParsing="false" onAction="#updateMembershipPolicyButtonOnAction" text="Update Membership Policy" />
+      <Button layoutX="25.0" layoutY="321.0" mnemonicParsing="false" onAction="#eventAnnouncementButtonOnAction" text="Announce Event" />
+      <Button layoutX="31.0" layoutY="159.0" mnemonicParsing="false" onAction="#viewLeavePolicyUpdateButtonOnAction" text="Approve Leave Policy Update" />
+      <Button layoutX="28.0" layoutY="282.0" mnemonicParsing="false" onAction="#viewMonthlyFinancialReportButtonOnAction" text="View Monthly Financial Report" />
+      <Button layoutX="26.0" layoutY="38.0" mnemonicParsing="false" onAction="#viewMembershipStatisticsButtonOnAction" text="View Membership Statistics" />
+      <Button layoutX="27.0" layoutY="116.0" mnemonicParsing="false" onAction="#ViewMembershipPolicyButtonOnAction" text="View Membership Policy" />
+   </children>
 </AnchorPane>

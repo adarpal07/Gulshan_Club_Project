@@ -63,7 +63,6 @@ public class PendingPaymentController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -79,7 +78,6 @@ public class PendingPaymentController
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         pendingPaymentTableView.getItems().clear();
         pendingPaymentTableView.getItems().addAll(records);
     }

@@ -56,7 +56,6 @@ public class ApprovePurchaseOrderController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -72,7 +71,6 @@ public class ApprovePurchaseOrderController
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         reqTableView.getItems().clear();
         reqTableView.getItems().addAll(records);
     }

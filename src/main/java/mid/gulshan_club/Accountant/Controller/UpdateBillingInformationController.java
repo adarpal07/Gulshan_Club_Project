@@ -65,7 +65,6 @@ public class UpdateBillingInformationController
             System.out.println("Bin file dose not exist");
             return;
         }
-
         FileInputStream fis = new FileInputStream(file);
         ObjectInputStream ois = new ObjectInputStream(fis);
 
@@ -77,11 +76,10 @@ public class UpdateBillingInformationController
                 records.add(r);
             }
         } catch (EOFException eof) {
-            errorAlert("End of file reached");
+            informationAlert("Click Ok to Load Data");
         } catch (ClassNotFoundException | IOException cnf) {
             errorAlert("Class not found!");
         }
-
         membershipFeeTableView.getItems().clear();
         membershipFeeTableView.getItems().addAll(records);
     }
@@ -121,7 +119,6 @@ public class UpdateBillingInformationController
                 Integer.parseInt(amountTextfield.getText()),
                 updateDatePicker.getValue()
         );
-
         try {
             File file = new File("UpdatedBillingInfo.bin");
             FileOutputStream fos;

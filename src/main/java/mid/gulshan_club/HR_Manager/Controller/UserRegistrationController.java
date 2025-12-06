@@ -31,15 +31,17 @@ public class UserRegistrationController
     private TextField nameTextField;
     @javafx.fxml.FXML
     private ComboBox<String>genderComboBox;
-    @javafx.fxml.FXML
-    private Label emailAddressTextField;
+
     @javafx.fxml.FXML
     private ComboBox<String> departmentComboBox;
+    @javafx.fxml.FXML
+    private TextField emailAddressTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
+
         userTypeComboBox.getItems().addAll("General Member","Guest Member","Chef","Accountant","Club Manager","Supplier","");
-        departmentComboBox.getItems().addAll("Administration","Accounts & Finance","Kitchen","Membership","Procurement");
+        departmentComboBox.getItems().addAll("Management","Accounts & Finance","Kitchen","Membership","Procurement");
         genderComboBox.getItems().addAll("Male","Female");
 
     }
@@ -65,6 +67,7 @@ public class UserRegistrationController
                 oos.writeObject(i);
             }
             oos.close();
+            userList.clear();
         }
         catch (Exception e){
 
@@ -87,6 +90,13 @@ public class UserRegistrationController
                 Integer.parseInt(phoneNumberTextField.getText()),
                 Integer.parseInt(nIDTextField.getText())
         );
+        userList.add(u);
+        idNumberTextField.clear();
+        nameTextField.clear();
+        addressTextField.clear();
+        emailAddressTextField.clear();
+        phoneNumberTextField.clear();
+        nIDTextField.clear();
 
     }
 }

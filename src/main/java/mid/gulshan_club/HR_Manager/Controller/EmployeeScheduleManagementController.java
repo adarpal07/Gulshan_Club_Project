@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class EmployeeScheduleManagementController
 {
     @javafx.fxml.FXML
-    private ComboBox<Long> employeeIdComboBox;
+    private ComboBox<Long> employeeIDComboBox;
     @javafx.fxml.FXML
     private ComboBox<String> shiftTypeComboBox;
     @javafx.fxml.FXML
@@ -21,31 +21,31 @@ public class EmployeeScheduleManagementController
     @javafx.fxml.FXML
     private ComboBox<String> shiftEndTimeComboBox;
 
-
     ArrayList<Employee> employeeList = new ArrayList<Employee>();
+
     @javafx.fxml.FXML
     public void initialize() {
-        try{
-            FileInputStream fis = new FileInputStream("UserRegistrationObjects.bin");
-            ObjectInputStream ois = new ObjectInputStream(fis);
 
-            UserRegistration u = null;
-            while(true){
-
-                u = (UserRegistration) ois.readObject();
-                employeeIdComboBox.getItems().add(u.getId());
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("UserRegistrationObjects.bin"))) {
+            try {
+                while(true) {
+                    UserRegistration u = (UserRegistration) ois.readObject();
+                    employeeIDComboBox.getItems().add(u.getId());
+                }
+            } catch (EOFException eof) {
+                ois.close();
             }
+        } catch (Exception e) {
 
         }
-        catch (Exception e) {
 
-        }
+
 
         shiftTypeComboBox.getItems().addAll("Morning","Evening","Night");
         shiftStartTimeComboBox.getItems().addAll("08:00 AM","04:00 PM","12:00 AM");
         shiftEndTimeComboBox.getItems().addAll("04:00 PM","12:00 AM","08:00 AM");
-    }
 
+    }
     ArrayList<EmployeeScheduleManagement> scheduleList = new ArrayList<EmployeeScheduleManagement>();
 
     @javafx.fxml.FXML
@@ -72,17 +72,19 @@ public class EmployeeScheduleManagementController
         catch (Exception e){
 
         }
+
     }
 
     @javafx.fxml.FXML
     public void createScheduleButtonOnAction(ActionEvent actionEvent) {
         EmployeeScheduleManagement s = new EmployeeScheduleManagement(
-                employeeIdComboBox.getValue(),
+                employeeIDComboBox.getValue(),
                 shiftStartTimeComboBox.getValue(),
                 shiftEndTimeComboBox.getValue(),
                 shiftTypeComboBox.getValue()
         );
         scheduleList.add(s);
-    }
 
+
+    }
 }

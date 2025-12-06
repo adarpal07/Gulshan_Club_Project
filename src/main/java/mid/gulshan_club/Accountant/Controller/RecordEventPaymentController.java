@@ -83,7 +83,6 @@ public class RecordEventPaymentController
                 fos = new FileOutputStream(file);
                 oos = new ObjectOutputStream(fos);
             }
-
             oos.writeObject(rep);
             oos.close();
 
@@ -114,3 +113,4 @@ public class RecordEventPaymentController
         a.showAndWait();
     }
 }
+
